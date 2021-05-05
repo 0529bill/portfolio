@@ -1,0 +1,32 @@
+.nav-link {
+  padding-right: 1rem !important;
+  padding-left: 1rem !important;
+}
+
+.nav-link span{
+  color:#b5b5b9;
+  position: relative;
+}
+.nav-link  span::after {
+  content: '';
+  position: relative;
+  display: block;
+  height: 3px;
+  width: 0;
+  background: white;
+  bottom: 1px;
+  left: 0;
+  transition: all 0.3s ease-out 0s;
+}
+
+
+.nav-link span:hover{
+  color: white !important;
+}
+
+.nav-link span:hover::after {
+  width: 100%
+}
+
+
+
