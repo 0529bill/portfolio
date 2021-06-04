@@ -1,6 +1,6 @@
 {
+  "homepage":"https://0529bill.github.io/portfolio/",
   "name": "my_portfolio",
-  "homepage":"https://0529bill.github.io/portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
