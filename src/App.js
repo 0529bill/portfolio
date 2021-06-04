@@ -37,19 +37,18 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/portfolio">
-            {/* <Home state={state} /> */}
-            <Projects state={state} />
+            <Home state={state} />
           </Route>
-          <Route path="/portfolio/About">
+          <Route exact path="/portfolio/About">
             <About state={state} />
           </Route>
-          <Route path="/portfolio/Projects">
+          <Route exact path="/portfolio/Projects">
             <Projects state={state} />
           </Route>
-          <Route path="/portfolio/Resume">
+          <Route exact path="/portfolio/Resume">
             <Resume state={state} />
           </Route>
-          <Route path="/portfolio/Settings">
+          <Route exact path="/portfolio/Settings">
             <Settings dispatch={dispatch} state={state} setLoad={setLoad} />
           </Route>
         </Switch>
