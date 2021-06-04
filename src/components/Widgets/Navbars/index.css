@@ -3,9 +3,15 @@
   padding-left: 1rem !important;
 }
 
+.nav-brand {
+  /* color: white !important; */
+  font-size: 30px !important;
+}
+
 .nav-link span{
-  color:#b5b5b9;
+  /* color:white; */
   position: relative;
+  font-size: 19px;
 }
 .nav-link  span::after {
   content: '';
@@ -13,20 +19,15 @@
   display: block;
   height: 3px;
   width: 0;
-  background: white;
+  background: rgb(209, 94, 48);
   bottom: 1px;
   left: 0;
   transition: all 0.3s ease-out 0s;
 }
 
 
-.nav-link span:hover{
-  color: white !important;
-}
-
 .nav-link span:hover::after {
   width: 100%
 }
-
 
 

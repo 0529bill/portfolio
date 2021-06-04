@@ -1,0 +1,48 @@
+
+.card_main {
+  /* width:  150px; */
+  opacity: 0.9;
+  background-color: transparent !important;
+  color: white;
+  box-shadow: 0 0 4px   rgb(238, 117, 69);
+  transition: all 0.8s ease 0s !important;
+  padding: 20px;
+  margin-bottom: 20px
+}
+
+
+.card_main:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 30px rgb(245, 100, 42);
+}
+.card_img {
+  padding: 20px
+}  
+
+.card_button {
+  background:rgb(238, 117, 69) !important;
+  color: black !important;
+}
+
+.card_button:hover {
+  background: rgb(255, 72, 0) !important;
+}
+
+
+.card_bullet ul{
+ margin: 0px 0px 0px 0px;
+}
+
+
+
+.card_bullet ul::before  {
+  content: "\2022";
+  color: white;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  font-size: 25px;
+  margin-left: -1em;
+  
+}
+

@@ -1,0 +1,40 @@
+.settings_container {
+    background-color: black;
+    position: fixed !important;
+    width: 100%;
+    height: 100vh;
+    color: white
+
+}
+/* #tsparticles {
+    position: fixed !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    width: 100%;
+    height: 100%;
+  } */
+
+
+
+  .settings_container_main {
+    padding-top: 100px;
+    justify-content: center;
+  }
+
+  .settings_container_button1 {
+      background-color:white;
+      margin-right: 10px;
+      border-radius: 40px;
+  }
+  .settings_container_button1:hover {
+     background-color: grey;
+}
+
+  .settings_container_button2 {
+      background-color: white;
+  }
+
+
+  .settings_language {
+    font-size: 30px;
+  }

@@ -1,0 +1,31 @@
+#tsparticles {
+    position: fixed !important;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    
+  }
+.projects_container {
+    /* color: white */
+    background-color: black;
+    height: 100%;
+}
+
+.projects_container_title {
+    padding-top: 60px;
+    font-size: 33px;
+    color: white;
+    position: relative;
+    text-align: center;
+}
+
+
+
+
+.projects_container_main {
+   padding-top: 30px;
+}
+
+
+
+

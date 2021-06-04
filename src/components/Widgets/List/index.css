@@ -1,0 +1,17 @@
+.list_bullet ul{
+    margin: 0px 0px 0px 0px;
+   }
+   
+   
+   
+   .list_bullet ul::before  {
+     content: "\2022";
+     color: white;
+     font-weight: bold;
+     display: inline-block; 
+     width: 1em;
+     font-size: 25px;
+     margin-left: -1em;
+     
+   }
+   

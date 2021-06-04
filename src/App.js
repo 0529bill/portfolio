@@ -7,42 +7,55 @@ import Projects from '@Components/Projects/Projects';
 import Resume from '@Components/Resume/Resume';
 import Settings from '@Components/Settings/Settings';
 import languageReducer from '@Reducers/languageReducer';
+import locationReducer from '@Reducers/locationReducer';
 import Spinner from '@Components/Widgets/Spinner/Spinner';
+import Footer from '@Components/Widgets/Footer/Footer';
 
 function App() {
   const [state, dispatch] = useReducer(languageReducer);
+  const [locationState, locationDispatch] = useReducer(locationReducer, {
+    location: null,
+  });
   const [load, setLoad] = useState(true);
 
   useEffect(() => {
     setTimeout(() => {
       setLoad(false);
-    }, 1200);
+    }, 1000);
   });
   return load ? (
-    <Spinner load={load} />
+    <div style={{ backgroundColor: 'black', width: '100vw', height: '100vh' }}>
+      <Spinner load={load} />
+    </div>
   ) : (
-    <>
-      <Navbars state={state} />
+    <div style={{ height: '100vh', width: '100%' }}>
+      <Navbars
+        state={state}
+        locationDispatch={locationDispatch}
+        locationState={locationState}
+      />
       <Router>
         <Switch>
-          <Route exact path="/">
-            <Home state={state} />
-          </Route>
-          <Route path="/About">
-            <About state={state} />
-          </Route>
-          <Route path="/Projects">
+          <Route exact path="/portfolio">
+            {/* <Home state={state} /> */}
             <Projects state={state} />
           </Route>
-          <Route path="/Resume">
+          <Route path="/portfolio/About">
+            <About state={state} />
+          </Route>
+          <Route path="/portfolio/Projects">
+            <Projects state={state} />
+          </Route>
+          <Route path="/portfolio/Resume">
             <Resume state={state} />
           </Route>
-          <Route path="/settings">
-            <Settings dispatch={dispatch} state={state} />
+          <Route path="/portfolio/Settings">
+            <Settings dispatch={dispatch} state={state} setLoad={setLoad} />
           </Route>
         </Switch>
       </Router>
-    </>
+      <Footer locationState={locationState} />
+    </div>
   );
 }
 

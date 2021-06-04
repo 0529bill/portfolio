@@ -1,0 +1,17 @@
+.modal_header {
+    text-align: center;
+}
+
+.modal_row {
+    justify-content: center;
+}
+
+
+.modal_button {
+    margin: 15px;
+}
+
+.modal_button:hover {
+    background-color: rgb(209, 94, 48);
+    color: white;
+}

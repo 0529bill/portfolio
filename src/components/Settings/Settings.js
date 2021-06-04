@@ -1,16 +1,41 @@
 import react from 'react';
+import { Container } from 'react-bootstrap';
 import i18n from '@Lang/i18n/i18n';
-function Settings({ dispatch, state }) {
+import './index.css';
+function Settings({ dispatch, state, setLoad }) {
   let a = i18n();
+
+  let handleEnglish = () => {
+    setLoad(true);
+    dispatch({ type: 'SET_LANGUAGE', payload: 'en' });
+  };
+
+  let handleChinese = () => {
+    setLoad(true);
+    dispatch({ type: 'SET_LANGUAGE', payload: 'tw' });
+  };
   return (
     <>
-      <h1>{a('frontend.local.title.settings')}</h1>
-      <button onClick={() => dispatch({ type: 'SET_LANGUAGE', payload: 'en' })}>
-        English
-      </button>
-      <button onClick={() => dispatch({ type: 'SET_LANGUAGE', payload: 'tw' })}>
-        Chinese
-      </button>
+      <Container fluid className="settings_container">
+        <Container className="settings_container_main">
+          <h1>{a('frontend.local.title.settings')}</h1>
+          <Container>
+            <div className="settings_language">Languages</div>
+            <button
+              className="settings_container_button1"
+              onClick={() => handleEnglish()}
+            >
+              English
+            </button>
+            <button
+              className="settings_container_button1"
+              onClick={() => handleChinese()}
+            >
+              Chinese
+            </button>
+          </Container>
+        </Container>
+      </Container>
     </>
   );
 }

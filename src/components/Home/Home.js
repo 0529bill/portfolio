@@ -12,25 +12,34 @@ function Home() {
       <Container className="home_container" fluid>
         <Particle />
         <Container fluid className="home_main">
-          <Row lg="12">
-            <span>{a('frontend.local.home.hello')}</span>
+          <Row>
+            <Col md={{ span: 3, offset: 3 }}>
+              <span>{a('frontend.local.home.hello')}</span>
+            </Col>
           </Row>
           <Row>
-            <span>{a('frontend.local.home.mynameis')}</span>&emsp;
-            <span>{a('frontend.local.home.bill')}</span>
+            <Col md={{ span: 4, offset: 3 }}>
+              <span>{a('frontend.local.home.mynameis')}</span>&emsp;
+              <span>{a('frontend.local.home.bill')}</span>
+            </Col>
           </Row>
-          <Row>
-            <span>I am a </span>&emsp;
-            <Typewriter
-              options={{
-                strings: [
-                  a('frontend.local.home.typewriter.webdeveloper'),
-                  a('frontend.local.home.typewriter.oceanlover'),
-                ],
-                autoStart: true,
-                loop: true,
-              }}
-            />
+          <Row className="home_main_typewriter">
+            <Col md={{ span: 3, offset: 3 }}>
+              <span>I am a </span>
+            </Col>
+            <Col className="home_main_typewriter_text">
+              <Typewriter
+                options={{
+                  strings: [
+                    a('frontend.local.home.typewriter.webdeveloper'),
+                    a('frontend.local.home.typewriter.oceanlover'),
+                    a('frontend.local.home.typewriter.photographer'),
+                  ],
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
+            </Col>
           </Row>
         </Container>
       </Container>
