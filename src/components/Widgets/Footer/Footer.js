@@ -3,27 +3,20 @@ import { Row, Col, Container } from 'react-bootstrap';
 import './index.css';
 
 function Footer({ locationState }) {
-  let currentStyle;
-  if (
-    locationState.location === '/About' ||
-    locationState.location === '/Resume'
-  ) {
-    currentStyle = { backgroundColor: 'black' };
-  }
-
+  console.log('locationStateFOoter', locationState);
   return (
     <Container
       fluid
       className="footer_container"
       style={
-        locationState.location === '/About' ||
-        locationState.location === '/Resume'
+        locationState.location === 'about' ||
+        locationState.location === 'resume'
           ? { backgroundColor: 'white', color: 'black' }
           : { backgroundColor: 'black', color: 'white' }
       }
     >
       <Row>
-        <Col md={{ span: 'ˇ', offset: '5' }}>©2021 handcrafted by bill</Col>
+        <Col md={{ span: '', offset: '5' }}>©2021 handcrafted by bill</Col>
         {/* <Col md={{ span: '3' }}>
           Contact me
           <a

@@ -30,4 +30,31 @@
   width: 100%
 }
 
+.navbar_hamburger {
+  position: relative;
+  width: 50px;
+  
+}
+
+
+.navbar_hamburger:before,
+.navbar_hamburger:after,
+.navbar_hamburger div {
+  background:black;
+  content: "";
+  display: block;
+  height: 3px;
+  border-radius: 3px;
+  margin: 7px 0;
+  transition: 0.5s;
+}
+.navbar_hamburger:active:before {
+  transform: translateY(12px) rotate(135deg);
+}
+.navbar_hamburger:active:after {
+  transform: translateY(-12px) rotate(-135deg);
+}
+.navbar_hamburger:active div {
+  transform: scale(0);
+}
 

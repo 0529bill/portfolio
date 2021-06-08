@@ -1,33 +1,25 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 
 import './index.css';
 import i18n from '@Lang/i18n/i18n';
 function Navbars({ state, locationDispatch, locationState }) {
   let a = i18n();
+  let [detectPages, setDetectPages] = useState(locationState.location);
 
   useEffect(() => {
     locationDispatch({
       type: 'SET_LOCATION',
-      payload: window.location.pathname,
+      payload: detectPages,
     });
-  }, []);
+  }, [detectPages]);
 
-  const content = {
-    color: 'white',
-    '&::after': {
-      background: 'white',
-    },
-  };
-
-  const test = {
-    color: 'green',
-  };
+  console.log('detectpages', detectPages);
+  console.log('locationState', locationState);
   return (
     <div
       style={
-        locationState.location === '/portfolio/About' ||
-        locationState.location === '/portfolio/Resume'
+        detectPages === 'about' || detectPages === 'resume'
           ? { backgroundColor: 'white', color: 'black' }
           : {
               backgroundColor: 'black',
@@ -47,10 +39,10 @@ function Navbars({ state, locationDispatch, locationState }) {
       >
         <Navbar.Brand
           className="nav-brand"
-          href="/portfolio"
+          onClick={() => setDetectPages('home')}
+          href="#/portfolio"
           style={
-            locationState.location === '/portfolio/About' ||
-            locationState.location === '/portfolio/Resume'
+            detectPages === 'about' || detectPages === 'resume'
               ? { color: 'black' }
               : { color: 'white' }
           }
@@ -63,19 +55,25 @@ function Navbars({ state, locationDispatch, locationState }) {
           // bg="transparent"
           className="navbar_hamburger"
           style={
-            locationState.location === '/portfolio/About' ||
-            locationState.location === '/portfolio/Resume'
-              ? { backgroundColor: 'black' }
+            detectPages === '#/portfolio/About' ||
+            detectPages === '#/portfolio/Resume'
+              ? { backgroundColor: 'black', color: 'black' }
               : null
           }
-        />
+        >
+          {/* <span style={{ color: 'black' }}>dksfj</span> */}
+          <div></div>
+        </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ml-auto">
-            <Nav.Link className="nav-link" href="/portfolio">
+            <Nav.Link
+              className="nav-link"
+              onClick={() => setDetectPages('home')}
+              href="#/portfolio"
+            >
               <span
                 style={
-                  locationState.location === '/portfolio/About' ||
-                  locationState.location === '/portfolio/Resume'
+                  detectPages === 'about' || detectPages === 'resume'
                     ? { color: 'black' }
                     : { color: 'white' }
                 }
@@ -83,11 +81,14 @@ function Navbars({ state, locationDispatch, locationState }) {
                 {a('frontend.local.nav.home')}
               </span>
             </Nav.Link>
-            <Nav.Link className="nav-link" href="/portfolio/About">
+            <Nav.Link
+              className="nav-link"
+              href="#/portfolio/About"
+              onClick={() => setDetectPages('about')}
+            >
               <span
                 style={
-                  locationState.location === '/portfolio/About' ||
-                  locationState.location === '/portfolio/Resume'
+                  detectPages === 'about' || detectPages === 'resume'
                     ? { color: 'black' }
                     : { color: 'white' }
                 }
@@ -95,11 +96,14 @@ function Navbars({ state, locationDispatch, locationState }) {
                 {a('frontend.local.nav.about')}
               </span>
             </Nav.Link>
-            <Nav.Link className="nav-link" href="/portfolio/Projects">
+            <Nav.Link
+              className="nav-link"
+              href="#/portfolio/Projects"
+              onClick={() => setDetectPages('projects')}
+            >
               <span
                 style={
-                  locationState.location === '/portfolio/About' ||
-                  locationState.location === '/portfolio/Resume'
+                  detectPages === 'about' || detectPages === 'resume'
                     ? { color: 'black' }
                     : { color: 'white' }
                 }
@@ -107,11 +111,13 @@ function Navbars({ state, locationDispatch, locationState }) {
                 {a('frontend.local.nav.projects')}
               </span>
             </Nav.Link>
-            <Nav.Link href="/portfolio/Resume">
+            <Nav.Link
+              href="#/portfolio/Resume"
+              onClick={() => setDetectPages('resume')}
+            >
               <span
                 style={
-                  locationState.location === '/portfolio/About' ||
-                  locationState.location === '/portfolio/Resume'
+                  detectPages === 'about' || detectPages === 'resume'
                     ? { color: 'black' }
                     : { color: 'white' }
                 }
@@ -119,11 +125,13 @@ function Navbars({ state, locationDispatch, locationState }) {
                 {a('frontend.local.nav.resume')}
               </span>
             </Nav.Link>
-            <Nav.Link href="/portfolio/Settings">
+            <Nav.Link
+              href="#/portfolio/Settings"
+              onClick={() => setDetectPages('settings')}
+            >
               <span
                 style={
-                  locationState.location === '/portfolio/About' ||
-                  locationState.location === '/portfolio/Resume'
+                  detectPages === 'about' || detectPages === 'resume'
                     ? { color: 'black' }
                     : { color: 'white' }
                 }

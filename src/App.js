@@ -1,5 +1,5 @@
 import { useState, useReducer, useEffect } from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { HashRouter, Switch, Route } from 'react-router-dom';
 import Navbars from '@Components/Widgets/Navbars/Navbars';
 import About from '@Components/About/About';
 import Home from '@Components/Home/Home';
@@ -14,15 +14,21 @@ import Footer from '@Components/Widgets/Footer/Footer';
 function App() {
   const [state, dispatch] = useReducer(languageReducer);
   const [locationState, locationDispatch] = useReducer(locationReducer, {
-    location: null,
+    location:
+      window.location.hash === '#/portfolio/About' ||
+      window.location.hash === '#/portfolio/Resume'
+        ? 'about'
+        : 'home',
   });
   const [load, setLoad] = useState(true);
+  const [test, setTest] = useState(false);
 
   useEffect(() => {
     setTimeout(() => {
       setLoad(false);
     }, 1000);
   });
+
   return load ? (
     <div style={{ backgroundColor: 'black', width: '100vw', height: '100vh' }}>
       <Spinner load={load} />
@@ -33,8 +39,9 @@ function App() {
         state={state}
         locationDispatch={locationDispatch}
         locationState={locationState}
+        setTest={setTest}
       />
-      <Router>
+      <HashRouter>
         <Switch>
           <Route exact path="/portfolio">
             <Home state={state} />
@@ -52,7 +59,7 @@ function App() {
             <Settings dispatch={dispatch} state={state} setLoad={setLoad} />
           </Route>
         </Switch>
-      </Router>
+      </HashRouter>
       <Footer locationState={locationState} />
     </div>
   );
