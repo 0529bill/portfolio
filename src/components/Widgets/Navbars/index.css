@@ -40,7 +40,7 @@
 .navbar_hamburger:before,
 .navbar_hamburger:after,
 .navbar_hamburger div {
-  background:black;
+  background:rgb(209, 94, 48);
   content: "";
   display: block;
   height: 3px;

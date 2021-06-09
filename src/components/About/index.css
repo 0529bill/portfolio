@@ -25,12 +25,8 @@
       border-bottom: black solid 1px;
   }
 
-/* .about_container_main:before {
-  position: relative;
-  width: 100px;
-  content: ' ';
-  border-bottom: black solid 1px;
-} */
+
+
 
 
 
@@ -46,12 +42,20 @@
   }
 
 @media only screen and (max-width:425px) {
+
+  .about_container_main {
+    border-bottom: none;
+  }
     .about_container_main_header {
         font-size: 38px   
        }   
 
   .about_container_main_text1 {
     font-size: 20px;
+}
+
+.skillCards_main {
+  padding-bottom: 0px !important;
 }
   }
 
@@ -63,7 +67,7 @@
 
   .skillCards_header {
     margin-top: 50px;
-    font-size: 40px  
+    font-size: 35px  
   }
 
 

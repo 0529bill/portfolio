@@ -9,7 +9,6 @@ import BP from '@Assets/Projects/B&P.png';
 import './index.css';
 
 function Project() {
-  console.log('wewe');
   let a = i18n();
   let cardData = [
     {

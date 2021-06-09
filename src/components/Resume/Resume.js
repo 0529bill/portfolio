@@ -11,7 +11,6 @@ function Resume() {
   let webSkillData = ['Javascript', 'HTML', 'css', 'Git', 'React', 'Redux'];
   let languageData = ['Chinese (Native)', 'English (TOEIC 930)'];
   let interestData = ['surfing', 'photography', 'drawing'];
-  console.log('openModal', openModal);
   return (
     <>
       <Container className="resume" fluid>

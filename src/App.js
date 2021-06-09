@@ -30,11 +30,11 @@ function App() {
   });
 
   return load ? (
-    <div style={{ backgroundColor: 'black', width: '100vw', height: '100vh' }}>
+    <div style={{ backgroundColor: 'white', width: '100vw', height: '100vh' }}>
       <Spinner load={load} />
     </div>
   ) : (
-    <div style={{ height: '100vh', width: '100%' }}>
+    <div style={{ height: '100vh', width: '100%', scrollBehavior: 'smooth' }}>
       <Navbars
         state={state}
         locationDispatch={locationDispatch}

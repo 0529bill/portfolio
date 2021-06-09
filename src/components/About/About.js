@@ -112,14 +112,16 @@ function About() {
               className="ml-2"
               target="_blank"
               style={{ backgroundColor: 'rgb(238, 117, 69)', color: 'white' }}
-              href="https://meetflo.zendesk.com/hc/en-us/articles/230425728-Privacy-Policies"
-              onClick={() => window.location.replace('https://google.com')}
+              onClick={() =>
+                alert('site is under construction, comeback later')
+              }
             >
               here
             </button>
             <div style={{ paddingTop: '10px', paddingBottom: '100px' }}>
               <a
                 style={{ marginRight: '10px' }}
+                target="_blank"
                 onClick={() =>
                   window.location.replace('https://github.com/0529bill')
                 }
@@ -127,6 +129,7 @@ function About() {
                 <FontAwesomeIcon icon={faGithub} size="lg" />
               </a>
               <a
+                target="_blank"
                 onClick={() =>
                   window.location.replace(
                     'https://www.instagram.com/bywater_photo/'

@@ -14,8 +14,6 @@ function Navbars({ state, locationDispatch, locationState }) {
     });
   }, [detectPages]);
 
-  console.log('detectpages', detectPages);
-  console.log('locationState', locationState);
   return (
     <div
       style={
@@ -61,7 +59,6 @@ function Navbars({ state, locationDispatch, locationState }) {
               : null
           }
         >
-          {/* <span style={{ color: 'black' }}>dksfj</span> */}
           <div></div>
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
