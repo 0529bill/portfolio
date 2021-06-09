@@ -56,7 +56,7 @@ function About() {
         <Container
           className="skillCards"
           data-aos="fade-up"
-          data-aos-delay="3000"
+          data-aos-delay="1800"
           data-aos-duration="2000"
           className="about_container_main_header"
         >
