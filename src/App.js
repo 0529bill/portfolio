@@ -11,6 +11,19 @@ import locationReducer from '@Reducers/locationReducer';
 import Spinner from '@Components/Widgets/Spinner/Spinner';
 import Footer from '@Components/Widgets/Footer/Footer';
 
+import { createBrowserHistory } from 'history';
+import ReactGA from 'react-ga';
+const TRACKING_ID = '275356703';
+ReactGA.initialize(TRACKING_ID);
+
+const history = createBrowserHistory();
+history.listen((location) => {
+  ReactGA.set({ page: location.pathname }); // Update the user's current page
+  ReactGA.pageview(location.pathname); // Record a pageview for the given page
+});
+
+console.log('history', history);
+
 function App() {
   const [state, dispatch] = useReducer(languageReducer);
   const [locationState, locationDispatch] = useReducer(locationReducer, {
@@ -43,10 +56,10 @@ function App() {
       />
       <HashRouter>
         <Switch>
-          <Route exact path="/portfolio">
+          <Route exact path="/portfolio" history={history}>
             <Home state={state} />
           </Route>
-          <Route exact path="/portfolio/About">
+          <Route exact path="/portfolio/About" history={history}>
             <About state={state} />
           </Route>
           <Route exact path="/portfolio/Projects">
