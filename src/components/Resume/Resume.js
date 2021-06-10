@@ -6,6 +6,7 @@ import './index.css';
 
 function Resume() {
   let a = i18n();
+  ReactGA.pageview(window.location.pathname + window.location.search);
 
   let [openModal, setOpenModal] = useState(false);
   let webSkillData = ['Javascript', 'HTML', 'css', 'Git', 'React', 'Redux'];

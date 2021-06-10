@@ -14,7 +14,12 @@ import Footer from '@Components/Widgets/Footer/Footer';
 import { createBrowserHistory } from 'history';
 import ReactGA from 'react-ga';
 const TRACKING_ID = 'UA-175814960-3';
-ReactGA.initialize(TRACKING_ID);
+ReactGA.initialize(TRACKING_ID, {
+  siteSpeedSampleRate: 100,
+  alwaysSendToDefaultTracker: true,
+});
+ReactGA.pageview(window.location.pathname + window.location.search);
+console.log('location', window.location);
 
 // const history = createBrowserHistory();
 // history.listen((location) => {
@@ -58,7 +63,7 @@ function App() {
             <Home state={state} />
           </Route>
           <Route exact path="/portfolio/About">
-            <About state={state} />
+            <About state={state} ReactGA={ReactGA} />
           </Route>
           <Route exact path="/portfolio/Projects">
             <Projects state={state} />

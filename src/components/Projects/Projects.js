@@ -11,7 +11,7 @@ import './index.css';
 import { GApageView } from '../../GaPage/GaPage';
 
 function Project() {
-  useEffect(() => GApageView('/portfolio/Projects'), []);
+  useEffect(() => GApageView('portfolio/Projects'), []);
   let a = i18n();
   let cardData = [
     {

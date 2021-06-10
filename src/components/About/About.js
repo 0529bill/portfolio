@@ -7,7 +7,8 @@ import { faInstagram, faGithub } from '@fortawesome/free-brands-svg-icons';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './index.css';
-function About() {
+function About({ ReactGA }) {
+  ReactGA.pageview(window.location.pathname + window.location.search);
   let a = i18n();
   useEffect(() => {
     AOS.init();
