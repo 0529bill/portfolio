@@ -16,13 +16,11 @@ import ReactGA from 'react-ga';
 const TRACKING_ID = 'UA-175814960-3';
 ReactGA.initialize(TRACKING_ID);
 
-const history = createBrowserHistory();
-history.listen((location) => {
-  ReactGA.set({ page: location.pathname }); // Update the user's current page
-  ReactGA.pageview(location.pathname); // Record a pageview for the given page
-});
-
-console.log('history', history);
+// const history = createBrowserHistory();
+// history.listen((location) => {
+//   ReactGA.set({ page: location.pathname }); // Update the user's current page
+//   ReactGA.pageview(location.pathname); // Record a pageview for the given page
+// });
 
 function App() {
   const [state, dispatch] = useReducer(languageReducer);
@@ -56,10 +54,10 @@ function App() {
       />
       <HashRouter>
         <Switch>
-          <Route exact path="/portfolio" history={history}>
+          <Route exact path="/portfolio">
             <Home state={state} />
           </Route>
-          <Route exact path="/portfolio/About" history={history}>
+          <Route exact path="/portfolio/About">
             <About state={state} />
           </Route>
           <Route exact path="/portfolio/Projects">

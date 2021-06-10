@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Particle from '@Components/Widgets/Particle/Particle';
 import Card from '@Components/Widgets/Cards/Cards';
 import { Container, Col, Row } from 'react-bootstrap';
@@ -8,7 +8,10 @@ import flourish from '@Assets/Projects/flourish.png';
 import BP from '@Assets/Projects/B&P.png';
 import './index.css';
 
+import { GApageView } from '../../GaPage/GaPage';
+
 function Project() {
+  useEffect(() => GApageView('/portfolio/Projects'), []);
   let a = i18n();
   let cardData = [
     {
