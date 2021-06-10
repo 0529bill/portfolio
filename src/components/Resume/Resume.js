@@ -3,7 +3,7 @@ import i18n from '@Lang/i18n/i18n';
 import { Container, Row, Col } from 'react-bootstrap';
 import Modal from '@Components/Widgets/Modal/Modal';
 import './index.css';
-
+import ReactGA from 'react-ga';
 function Resume() {
   let a = i18n();
   ReactGA.pageview(window.location.pathname + window.location.search);
