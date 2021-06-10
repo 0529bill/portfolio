@@ -8,7 +8,7 @@ function Cards({ img, cardTitle, cardText, cardLink, cardFeatures }) {
   let a = i18n();
 
   return (
-    <>
+    <div>
       <Card className="card_main">
         <Card.Img
           className="card_img"
@@ -30,7 +30,7 @@ function Cards({ img, cardTitle, cardText, cardLink, cardFeatures }) {
           </Button>
         </Card.Body>
       </Card>
-    </>
+    </div>
   );
 }
 
