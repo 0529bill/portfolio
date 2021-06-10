@@ -13,7 +13,7 @@ import Footer from '@Components/Widgets/Footer/Footer';
 
 import { createBrowserHistory } from 'history';
 import ReactGA from 'react-ga';
-const TRACKING_ID = '275356703';
+const TRACKING_ID = 'UA-175814960-3';
 ReactGA.initialize(TRACKING_ID);
 
 const history = createBrowserHistory();
