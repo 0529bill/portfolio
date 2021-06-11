@@ -1,12 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import Particle from '@Components/Widgets/Particle/Particle';
 import i18n from '@Lang/i18n/i18n';
 import Typewriter from 'typewriter-effect';
+import { GApageView } from '../../GaPage/GaPage';
 import './index.css';
 
 function Home() {
   let a = i18n();
+  useEffect(() => GApageView('portfolio/Home'), []);
   return (
     <>
       <Container className="home_container" fluid>

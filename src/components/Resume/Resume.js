@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import i18n from '@Lang/i18n/i18n';
 import { Container, Row, Col } from 'react-bootstrap';
 import Modal from '@Components/Widgets/Modal/Modal';
 import './index.css';
-import ReactGA from 'react-ga';
+import { GApageView } from '../../GaPage/GaPage';
 function Resume() {
   let a = i18n();
-  ReactGA.pageview(window.location.pathname + window.location.search);
+  useEffect(() => GApageView('portfolio/Resume'), []);
 
   let [openModal, setOpenModal] = useState(false);
   let webSkillData = ['Javascript', 'HTML', 'css', 'Git', 'React', 'Redux'];

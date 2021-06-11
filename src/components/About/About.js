@@ -1,22 +1,22 @@
 import React, { useEffect } from 'react';
-import { Container, Col, Row, Button } from 'react-bootstrap';
+import { Container, Col, Row } from 'react-bootstrap';
 import i18n from '@Lang/i18n/i18n';
-import Particle from '@Components/Widgets/Particle/Particle';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { GApageView } from '../../GaPage/GaPage';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './index.css';
-function About({ ReactGA }) {
-  ReactGA.pageview(window.location.pathname + window.location.search);
+function About() {
   let a = i18n();
+  useEffect(() => GApageView('portfolio/About'), []);
+
   useEffect(() => {
     AOS.init();
   }, []);
   return (
     <>
       <Container className="about_container" fluid>
-        {/* <Particle /> */}
         <Container className="about_container_main">
           <div
             data-aos="fade-up"
@@ -55,7 +55,6 @@ function About({ ReactGA }) {
           </Row>
         </Container>
         <Container
-          className="skillCards"
           data-aos="fade-up"
           data-aos-delay="1800"
           data-aos-duration="2000"
@@ -130,7 +129,9 @@ function About({ ReactGA }) {
                 <FontAwesomeIcon icon={faGithub} size="lg" />
               </a>
               <a
+                href="https://www.instagram.com/bywater_photo/"
                 target="_blank"
+                style={{ color: 'black' }}
                 onClick={() =>
                   window.location.replace(
                     'https://www.instagram.com/bywater_photo/'

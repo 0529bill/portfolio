@@ -11,21 +11,12 @@ import locationReducer from '@Reducers/locationReducer';
 import Spinner from '@Components/Widgets/Spinner/Spinner';
 import Footer from '@Components/Widgets/Footer/Footer';
 
-import { createBrowserHistory } from 'history';
 import ReactGA from 'react-ga';
 const TRACKING_ID = 'UA-175814960-3';
 ReactGA.initialize(TRACKING_ID, {
   siteSpeedSampleRate: 100,
   alwaysSendToDefaultTracker: true,
 });
-ReactGA.pageview(window.location.pathname + window.location.search);
-console.log('location', window.location);
-
-// const history = createBrowserHistory();
-// history.listen((location) => {
-//   ReactGA.set({ page: location.pathname }); // Update the user's current page
-//   ReactGA.pageview(location.pathname); // Record a pageview for the given page
-// });
 
 function App() {
   const [state, dispatch] = useReducer(languageReducer);
@@ -38,6 +29,11 @@ function App() {
   });
   const [load, setLoad] = useState(true);
   const [test, setTest] = useState(false);
+
+  useEffect(
+    () => ReactGA.pageview(window.location.pathname + window.location.search),
+    []
+  );
 
   useEffect(() => {
     setTimeout(() => {
@@ -63,7 +59,7 @@ function App() {
             <Home state={state} />
           </Route>
           <Route exact path="/portfolio/About">
-            <About state={state} ReactGA={ReactGA} />
+            <About state={state} />
           </Route>
           <Route exact path="/portfolio/Projects">
             <Projects state={state} />
