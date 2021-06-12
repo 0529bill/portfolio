@@ -3,7 +3,7 @@ import i18n from '@Lang/i18n/i18n';
 import { Container, Row, Col } from 'react-bootstrap';
 import Modal from '@Components/Widgets/Modal/Modal';
 import './index.css';
-import { GApageView } from '../../GaPage/GaPage';
+import { GApageView } from '@GoogleAnalytics/googleAnalytics';
 function Resume() {
   let a = i18n();
   useEffect(() => GApageView('portfolio/Resume'), []);
@@ -12,6 +12,7 @@ function Resume() {
   let webSkillData = ['Javascript', 'HTML', 'css', 'Git', 'React', 'Redux'];
   let languageData = ['Chinese (Native)', 'English (TOEIC 930)'];
   let interestData = ['surfing', 'photography', 'drawing'];
+
   return (
     <>
       <Container className="resume" fluid>

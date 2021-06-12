@@ -1,7 +1,7 @@
 import react, { useEffect } from 'react';
 import { Container } from 'react-bootstrap';
 import i18n from '@Lang/i18n/i18n';
-import { GApageView } from '../../GaPage/GaPage';
+import { GApageView } from '@GoogleAnalytics/googleAnalytics';
 import './index.css';
 function Settings({ dispatch, state, setLoad }) {
   let a = i18n();

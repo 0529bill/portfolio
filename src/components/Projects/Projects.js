@@ -8,7 +8,7 @@ import flourish from '@Assets/Projects/flourish.png';
 import BP from '@Assets/Projects/B&P.png';
 import './index.css';
 
-import { GApageView } from '../../GaPage/GaPage';
+import { GApageView } from '@GoogleAnalytics/googleAnalytics';
 
 function Project() {
   useEffect(() => GApageView('portfolio/Projects'), []);

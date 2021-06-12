@@ -7,6 +7,7 @@ module.exports = {
       '@Assets': path.resolve(__dirname, 'src/assets/'),
       '@Reducers': path.resolve(__dirname, 'src/reducers/'),
       '@Lang': path.resolve(__dirname, 'src/lang/'),
+      '@GoogleAnalytics': path.resolve(__dirname, 'src/GoogleAnalytics/'),
     },
   },
 };

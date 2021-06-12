@@ -3,7 +3,7 @@ import { Container, Col, Row } from 'react-bootstrap';
 import i18n from '@Lang/i18n/i18n';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faGithub } from '@fortawesome/free-brands-svg-icons';
-import { GApageView } from '../../GaPage/GaPage';
+import { GApageView } from '@GoogleAnalytics/googleAnalytics';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './index.css';
