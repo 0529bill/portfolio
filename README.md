@@ -1,8 +1,8 @@
 # My portfolio
 
-![coverage percentage](badges/badges-branches.svg)
-[coverage percentage2](./badges/badges-functions.svg)
-[coverage percentage3](./badges/badges-lines.svg)
+![coverage percentage](%PUBLIC_URL%/badges-branches.svg)
+[coverage percentage2](public/badge-branches.svg)
+[coverage percentage3]: public/badge-branches.svg
 
 ## Available Scripts
 
