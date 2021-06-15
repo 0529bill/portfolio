@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# My portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[coverage percentage](./badges/badges-branches.svg)
+[coverage percentage2](./badges/badges-functions.svg)
+[coverage percentage3](./badges/badges-lines.svg)
 
 ## Available Scripts
 

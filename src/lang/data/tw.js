@@ -1,4 +1,5 @@
 const lang = {
+  'frontend.test.lang.tw': '測試',
   'frontend.local.title.settings': '設定',
   'frontend.local.nav.home': '主頁',
   'frontend.local.nav.projects': '專案',
