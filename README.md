@@ -1,6 +1,6 @@
 # My portfolio
 
-[coverage percentage](./badges/badges-branches.svg)
+![coverage percentage](badges/badges-branches.svg)
 [coverage percentage2](./badges/badges-functions.svg)
 [coverage percentage3](./badges/badges-lines.svg)
 
