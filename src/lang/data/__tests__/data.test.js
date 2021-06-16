@@ -1,7 +1,7 @@
 import en from '../en';
 import tw from '../tw';
 
-describe('[Lang] only export string', () => {
+describe('[lang] [data] only export string', () => {
   it('check en only export string', () => {
     const enTesting = en['frontend.test.lang.en'];
     expect(typeof enTesting).toBe('string');

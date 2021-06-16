@@ -18,6 +18,9 @@ function i18n() {
 
   function t(key) {
     let text = langBase[key];
+    if (text === undefined || text.length === 0) {
+      return `[NO_TRANSLATION_WITH_THIS_LANG]: [${key}]`;
+    }
     return text;
   }
 
