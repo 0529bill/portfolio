@@ -31,11 +31,11 @@ const lang = {
   'fronend.local.about.skillCards.languageEnglish': 'English: Business fluent',
   'frontend.local.projects.header': 'My projects',
   'frontend.local.projects.cardData.cardText.countable':
-    ' - app that helps you track your past relationships',
+    'This is an app that can helps you to track your past relationships',
   'frontend.local.projects.cardData.cardText.flourish':
-    'app that simulate a lightning company',
+    'This is a lightbulb website.',
   'frontend.local.projects.cardData.cardText.B&P':
-    'app that simulate a skateboard company',
+    'Thia is a skateboard website.',
   'frontend.local.projects.cardFeatures': 'Project Features',
   'frontend.local.projects.checkoutmyproject': 'Check out this project',
   'frontend.local.resume.description.title': 'Tse Lin',

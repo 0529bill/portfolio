@@ -139,7 +139,7 @@ function Resume() {
                   <div className="resume_bullet">
                     <ul>
                       <span>
-                        {a('frontend.loca.resume.workExperences.bullet1')}
+                        {a('frontend.local.resume.workExperences.bullet1')}
                       </span>
                     </ul>
                   </div>
