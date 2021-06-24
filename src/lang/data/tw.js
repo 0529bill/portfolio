@@ -63,7 +63,7 @@ const lang = {
   'frontend.local.resume.workExperences': '工作經驗',
   'fronend.local.resume.workExperences.desciption':
     '西門紅樓實習生 (2016/7 ~ 2016/8)',
-  'frontend.loca.resume.workExperences.bullet1':
+  'frontend.local.resume.workExperences.bullet1':
     '負責西門紅樓廣場六日市集的大小事務。',
   'frontend.local.resume.workExperences.bullet2':
     '和同事一起討論並給予市集新的建議',
