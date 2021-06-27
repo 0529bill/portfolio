@@ -56,7 +56,7 @@ const lang = {
   'frontend.local.resume.careerObjective': 'Career Objective',
   'frontend.local.resume.careerObjective.description': `Self-motivated and hard-working individuals with knowledge and
   proficiency in JavaScript, HTML, CSS, React, and mobile
-  responsive website development. Seeking to apply my problem solving ability and web development skills to the frone-end developer position at your company.
+  responsive website development. Seeking to apply my problem solving ability and web development skills to the front-end developer position at your company.
   Possess good communication skills and strong work ethic that will aid your company in meeting its milestone.`,
   'frontend.local.resume.skills': 'Skills',
   'frontend.local.resume.skills.webDevelopment': 'Web development',
