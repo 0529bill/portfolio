@@ -110,6 +110,9 @@ function Resume() {
                 </div>
                 <div>
                   {a('frontend.local.resume.skills.volunteering.description')}
+                  <p style={{ marginBottom: '0px' }}>
+                    International students volunteer (2017/7 ~ 2021)
+                  </p>
                   <div className="resume_bullet">
                     <ul>
                       <span>

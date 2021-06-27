@@ -19,14 +19,14 @@ const lang = {
   'frontend.local.about.description3':
     ' Besides coding, I enjoy photography, drawing and surfing.',
   'frontend.local.about.photography': 'Check out my photography website',
-  'frontend.local.about.skillCards.header': 'I also enjoy....',
+  'frontend.local.about.skillCards.header': 'I also love....',
   'frontend.local.about.skillCards.webText': 'Web Developmenet',
   'frontend.local.about.skillCards.webDesign': 'Web Design',
   'frontend.local.about.skillCards.language': 'Languages',
   'frontend.local.about.skillCards.webTextContent': `I use React. I am familiar with react ecosystem including
   React-router, Redux and React-hooks.`,
   'frontend.local.about.skillCards.webDesignContent':
-    'I use css, scss, bootstrap to style web page',
+    'I use css, scss and bootstrap to style my web pages.',
   'frontend.local.about.skillCards.languageChinese': 'Chinese: native',
   'fronend.local.about.skillCards.languageEnglish': 'English: Business fluent',
   'frontend.local.projects.header': 'My projects',
@@ -56,30 +56,27 @@ const lang = {
   'frontend.local.resume.careerObjective': 'Career Objective',
   'frontend.local.resume.careerObjective.description': `Self-motivated and hard-working individuals with knowledge and
   proficiency in JavaScript, HTML, CSS, React, and mobile
-  responsive website development, as well as strong ability to
-  communicate and work in a team effectively seeks to apply for
-  the position of Front-end Developer.`,
+  responsive website development. Seeking to apply my problem solving ability and web development skills to the frone-end developer position at your company.
+  Possess good communication skills and strong work ethic that will aid your company in meeting its milestone.`,
   'frontend.local.resume.skills': 'Skills',
   'frontend.local.resume.skills.webDevelopment': 'Web development',
   'frontend.local.resume.skills.language': 'Language',
   'frontend.local.resume.skills.otherInterests': 'Other interests',
   'frontend.local.resume.skills.volunteering': 'Volunteering',
-  'frontend.local.resume.skills.volunteering.description': `Volunteering at Office of international & cross-strait
-  Academic exchange, Soochow University, as International
-  students volunteer (2017/7 ~ 2021)`,
-  'frontned.local.resume.skills.volunteering.descrption.bullet1': `Help international students to adjust to a new
+  'frontend.local.resume.skills.volunteering.description': `Office of international & cross-strait
+  Academic exchange, Soochow University.`,
+  'frontned.local.resume.skills.volunteering.descrption.bullet1': `Helping international students to adjust to a new
   environment.`,
-  'frontend.local.resume.skills.volunteering.description.bullet2': `Organize Soochow university's 2019 international
-  cultural week, Me and my team prepared a full week of
+  'frontend.local.resume.skills.volunteering.description.bullet2': `Organized Soochow university's 2019 international
+  cultural week. Me and my team prepared a full week of
   activites related to chinese culture, traditionlal
   taiwanese games and traditional chinese foods for
-  international students in order to help them have a
-  better understanding of Chinese culture.`,
+  international students to help them to accustomed to Chinese culture.`,
   'frontend.local.resume.workExperences': 'Work Experences',
   'fronend.local.resume.workExperences.desciption':
     'Intern at The Red House (2016/7 ~ 2016/8)',
-  'frontend.local.resume.workExperences.bullet1': 'organize weekly bazzar.',
-  'frontend.local.resume.workExperences.bullet2': `Coming up with ideas for promotions, giveaways, and
+  'frontend.local.resume.workExperences.bullet1': 'Organized weekly bazzar.',
+  'frontend.local.resume.workExperences.bullet2': `Coming up with new ideas for promotions, giveaways, and
   other projects that can give the bazzar a publicity and
   marketing boost.`,
   'frontend.local.resume.downloadResume': 'Download resume',

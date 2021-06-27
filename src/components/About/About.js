@@ -113,7 +113,7 @@ function About() {
               target="_blank"
               style={{ backgroundColor: 'rgb(238, 117, 69)', color: 'white' }}
               onClick={() =>
-                alert('site is under construction, comeback later')
+                alert('The site is under construction, comeback later')
               }
             >
               here
