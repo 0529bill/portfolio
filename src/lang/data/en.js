@@ -48,16 +48,16 @@ const lang = {
     'Soochow University, Taipei, Taiwan.',
   'frontend.local.resume.educaton.major':
     'Bachelor of arts; English major. (2017/7 ~ 2021/6)',
-  'frontend.local.resume.education.otherCourses': `Other courses that I studied: Calculas, Algebra,
+  'frontend.local.resume.education.otherCourses': `Other courses that I studied: Calculus, Algebra,
   Introduction to Database, Introduction to Big data.`,
   'frontend.local.resume.honors': 'Honors',
   'frontend.local.resume.honors.description': `Ning Po Association of Taiwan Scholarship (2018, 2019, 2020,
     2021)`,
   'frontend.local.resume.careerObjective': 'Career Objective',
-  'frontend.local.resume.careerObjective.description': `Self-motivated and hard-working individuals with knowledge and
+  'frontend.local.resume.careerObjective.description': `A self-motivated and hard-working individual with knowledge and
   proficiency in JavaScript, HTML, CSS, React, and mobile
   responsive website development. Seeking to apply my problem solving ability and web development skills to the front-end developer position at your company.
-  Possess good communication skills and strong work ethic that will aid your company in meeting its milestone.`,
+  Possessing good communication skills and strong work ethic that will aid your company in meeting its milestone.`,
   'frontend.local.resume.skills': 'Skills',
   'frontend.local.resume.skills.webDevelopment': 'Web development',
   'frontend.local.resume.skills.language': 'Language',
@@ -67,15 +67,14 @@ const lang = {
   Academic exchange, Soochow University.`,
   'frontned.local.resume.skills.volunteering.descrption.bullet1': `Helping international students to adjust to a new
   environment.`,
-  'frontend.local.resume.skills.volunteering.description.bullet2': `Organized Soochow university's 2019 international
+  'frontend.local.resume.skills.volunteering.description.bullet2': `Organizing Soochow university's 2019 international
   cultural week. Me and my team prepared a full week of
-  activites related to chinese culture, traditionlal
-  taiwanese games and traditional chinese foods for
-  international students to help them to accustomed to Chinese culture.`,
+  activites related to chinese culture, including traditional Chinese games and foods, for
+  international students to help them accustomed to Chinese culture.`,
   'frontend.local.resume.workExperences': 'Work Experences',
   'fronend.local.resume.workExperences.desciption':
     'Intern at The Red House (2016/7 ~ 2016/8)',
-  'frontend.local.resume.workExperences.bullet1': 'Organized weekly bazzar.',
+  'frontend.local.resume.workExperences.bullet1': 'Organizing weekly bazzar.',
   'frontend.local.resume.workExperences.bullet2': `Coming up with new ideas for promotions, giveaways, and
   other projects that can give the bazzar a publicity and
   marketing boost.`,
