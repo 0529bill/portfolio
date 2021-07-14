@@ -1,9 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import i18n from '@Lang/i18n/i18n';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Image } from 'react-bootstrap';
 import Modal from '@Components/Widgets/Modal/Modal';
 import './index.css';
 import { GApageView } from '@GoogleAnalytics/googleAnalytics';
+import countable from '@Assets/Projects/countable.png';
+import flourish from '@Assets/Projects/flourish.png';
+import BP from '@Assets/Projects/B&P.png';
+
 function Resume() {
   let a = i18n();
   useEffect(() => GApageView('portfolio/Resume'), []);
@@ -13,9 +17,35 @@ function Resume() {
   let languageData = ['Chinese (Native)', 'English (TOEIC 930)'];
   let interestData = ['surfing', 'photography', 'drawing'];
 
+  let countableSkill = [
+    'react',
+    'redux',
+    'react hooks',
+    'react-router',
+    'redux-thunk',
+    'bootstrap',
+  ];
+  let bpSkill = ['shopping cart', 'context-api', 'react-router'];
+  let flourishSkill = ['firebase_authenticaton', 'context-api', 'bootstrap'];
+
+  let countableFeature = ['CRUD operation', 'oauth authentication'];
+  let flourishFeature = [
+    'signIn/signUp',
+    'private router',
+    'functional component',
+  ];
+  let bpFeature = ['shopping cart', 'signIn/signUp', 'tinyJPG'];
   return (
     <>
       <Container className="resume" fluid>
+        <Row className="resume_download">
+          <button
+            className="resume_downloadButton"
+            onClick={() => setOpenModal(true)}
+          >
+            {a('frontend.local.resume.downloadResume')}
+          </button>
+        </Row>
         <Container className="resume_main">
           <Container className="resume_description">
             <div className="resume_description_title">
@@ -75,7 +105,7 @@ function Resume() {
                     {a('frontend.local.resume.skills.webDevelopment')}
                     {webSkillData.map((data, id) => (
                       <div className="resume_bullet">
-                        <ul>
+                        <ul key={id}>
                           <span key={id}>{data}</span>
                         </ul>
                       </div>
@@ -86,7 +116,7 @@ function Resume() {
                     {a('frontend.local.resume.skills.language')}
                     {languageData.map((data, id) => (
                       <div className="resume_bullet">
-                        <ul>
+                        <ul key={id}>
                           <span key={id}>{data}</span>
                         </ul>
                       </div>
@@ -96,7 +126,111 @@ function Resume() {
                     {a('frontend.local.resume.skills.otherInterests')}
                     {interestData.map((data, id) => (
                       <div className="resume_bullet">
-                        <ul>
+                        <ul key={id}>
+                          <span key={id}>{data}</span>
+                        </ul>
+                      </div>
+                    ))}
+                  </Col>
+                </Row>
+              </Container>
+              <Container>
+                <div className="resume_subtitle">Side Projects</div>
+                <Row>
+                  <Col>
+                    <p className="resume_projectName">
+                      {a('frontned.local.resume.sideProjects.projectName1')}
+                    </p>
+                    <Image
+                      src={countable}
+                      thumbnail
+                      style={{ maxHeight: '150px', objectFit: 'scale-down' }}
+                    />
+                    <p className="resume_projectsSubtitle">
+                      {a('frontend.local.resume.sideProjects.description1')}
+                    </p>
+                    <p className="resume_tech">
+                      {a('frontend.local.resume.sideProjects.projectFeatures')}
+                    </p>
+                    {countableFeature.map((data, id) => (
+                      <div className="resume_bullet">
+                        <ul key={id}>
+                          <span key={id}>{data}</span>
+                        </ul>
+                      </div>
+                    ))}
+                    <p className="resume_tech">
+                      {a('frontend.local.resume.sideProjects.toolsUsed')}
+                    </p>
+                    {countableSkill.map((data, id) => (
+                      <div className="resume_bullet">
+                        <ul key={id}>
+                          <span key={id}>{data}</span>
+                        </ul>
+                      </div>
+                    ))}
+                  </Col>
+                  <Col>
+                    <p className="resume_projectName">
+                      {a('frontend.local.resume.sideProjects.projectName2')}
+                    </p>
+                    <Image
+                      thumbnail
+                      src={BP}
+                      style={{ maxHeight: '150px', objectFit: 'scale-down' }}
+                    />
+                    <p className="resume_projectsSubtitle">
+                      {a('frontend.local.resume.sideProjects.description2')}
+                    </p>
+                    <p className="resume_tech">
+                      {a('frontend.local.resume.sideProjects.projectFeatures')}
+                    </p>
+                    {bpFeature.map((data, id) => (
+                      <div className="resume_bullet">
+                        <ul key={id}>
+                          <span key={id}>{data}</span>
+                        </ul>
+                      </div>
+                    ))}
+                    <p className="resume_tech">
+                      {a('frontend.local.resume.sideProjects.toolsUsed')}
+                    </p>
+                    {bpSkill.map((data, id) => (
+                      <div className="resume_bullet">
+                        <ul key={id}>
+                          <span key={id}>{data}</span>
+                        </ul>
+                      </div>
+                    ))}
+                  </Col>
+                  <Col>
+                    <p className="resume_projectName">
+                      {a('frontend.local.resume.sideProjects.projectName3')}
+                    </p>
+                    <Image
+                      thumbnail
+                      src={flourish}
+                      style={{ maxHeight: '150px', objectFit: 'scale-down' }}
+                    />
+                    <p className="resume_projectsSubtitle">
+                      {a('frontend.local.resume.sideProjects.description3')}
+                    </p>
+                    <p className="resume_tech">
+                      {a('frontend.local.resume.sideProjects.projectFeatures')}
+                    </p>
+                    {flourishFeature.map((data, id) => (
+                      <div className="resume_bullet">
+                        <ul key={id}>
+                          <span key={id}>{data}</span>
+                        </ul>
+                      </div>
+                    ))}
+                    <p className="resume_tech">
+                      {a('frontend.local.resume.sideProjects.toolsUsed')}
+                    </p>
+                    {flourishSkill.map((data, id) => (
+                      <div className="resume_bullet">
+                        <ul key={id}>
                           <span key={id}>{data}</span>
                         </ul>
                       </div>
@@ -158,14 +292,6 @@ function Resume() {
             </Col>
           </Row>
         </Container>
-        <Row className="resume_download">
-          <button
-            className="resume_downloadButton"
-            onClick={() => setOpenModal(true)}
-          >
-            {a('frontend.local.resume.downloadResume')}
-          </button>
-        </Row>
         <Modal show={openModal} onHide={() => setOpenModal(false)} />
       </Container>
     </>

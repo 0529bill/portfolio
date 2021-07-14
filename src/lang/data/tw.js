@@ -68,6 +68,17 @@ const lang = {
   'frontend.local.resume.workExperences.bullet2':
     '和同事一起討論並給予市集新的建議',
   'frontend.local.resume.downloadResume': '下載履歷',
+  'frontned.local.resume.sideProjects.projectName1': '專案名稱: Countable',
+  'frontend.local.resume.sideProjects.projectName2': '專案名稱: B&P',
+  'frontend.local.resume.sideProjects.projectName3': '專案名稱: Flourish',
+  'frontend.local.resume.sideProjects.description1':
+    '一個幫你追蹤紀錄過去感情的app',
+  'frontend.local.resume.sideProjects.description2':
+    '一個有購物車、註冊帳號、登入和登出功能的滑板網站',
+  'frontend.local.resume.sideProjects.description3':
+    '一個有帳號註冊、登入和登出功能的燈泡網站',
+  'frontend.local.resume.sideProjects.projectFeatures': '專案特色',
+  'frontend.local.resume.sideProjects.toolsUsed': '使用的工具:',
 };
 Object.freeze(lang);
 export default lang;

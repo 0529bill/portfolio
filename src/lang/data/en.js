@@ -79,6 +79,17 @@ const lang = {
   other projects that can give the bazzar a publicity and
   marketing boost.`,
   'frontend.local.resume.downloadResume': 'Download resume',
+  'frontned.local.resume.sideProjects.projectName1': 'Project name: Countable',
+  'frontend.local.resume.sideProjects.projectName2': 'Project name: B&P',
+  'frontend.local.resume.sideProjects.projectName3': 'Project name: Flourish',
+  'frontend.local.resume.sideProjects.description1':
+    'An app that helps you track your past relationships',
+  'frontend.local.resume.sideProjects.description2': `A skateboarding website with shoppoing cart, sign in, sign
+  up features.`,
+  'frontend.local.resume.sideProjects.description3':
+    'A lightbulb website with sign in, sign up feature.',
+  'frontend.local.resume.sideProjects.projectFeatures': 'Project Features',
+  'frontend.local.resume.sideProjects.toolsUsed': 'Tools used:',
 };
 
 Object.freeze(lang);

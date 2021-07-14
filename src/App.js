@@ -52,6 +52,8 @@ function App() {
         locationDispatch={locationDispatch}
         locationState={locationState}
         setTest={setTest}
+        dispatch={dispatch}
+        setLoad={setLoad}
       />
       <HashRouter>
         <Switch>

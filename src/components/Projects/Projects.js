@@ -42,7 +42,8 @@ function Project() {
       img: BP,
       cardTitle: 'B&P',
       cardText: 'frontend.local.projects.cardData.cardText.B&P',
-      cardLink: 'https://github.com/0529bill/clothing_brand',
+      cardLink:
+        'https://0529bill.github.io/clothing_brand/#/clothing_brand/home',
       cardFeatures: ['shopping cart', 'useContext', 'react-router'],
     },
   ];

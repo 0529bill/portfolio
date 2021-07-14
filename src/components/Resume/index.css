@@ -87,13 +87,13 @@ font-size: 20px;
 
 .resume_bullet ul{
     margin: 0px 0px 0px 0px;
+    color: grey;
    }
    
    
    
-   .resume_bullet ul::before  {
+.resume_bullet ul::before  {
      content: "\2022";
-     color: black;
      font-weight: bold;
      display: inline-block; 
      width: 1em;
@@ -102,6 +102,23 @@ font-size: 20px;
      
    }
    
+
+.resume_projectName {
+    margin-top: 10px;
+    font-size: 18px;
+    color: black;
+
+   }
+
+.resume_tech {
+    margin: 18px 0 0 0;
+    color: black;
+}
+
+.resume_projectsSubtitle {
+   margin:18px 0px 16px 0px
+
+}
 
 .resume_download{
     margin: 30px;

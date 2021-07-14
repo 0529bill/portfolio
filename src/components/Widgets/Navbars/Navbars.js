@@ -3,7 +3,13 @@ import { Navbar, Nav } from 'react-bootstrap';
 
 import './index.css';
 import i18n from '@Lang/i18n/i18n';
-function Navbars({ state, locationDispatch, locationState }) {
+function Navbars({
+  state,
+  locationDispatch,
+  locationState,
+  dispatch,
+  setLoad,
+}) {
   let a = i18n();
   let [detectPages, setDetectPages] = useState(locationState.location);
 
@@ -14,6 +20,15 @@ function Navbars({ state, locationDispatch, locationState }) {
     });
   }, [detectPages]);
 
+  let handleEnglish = () => {
+    setLoad(true);
+    dispatch({ type: 'SET_LANGUAGE', payload: 'en' });
+  };
+
+  let handleChinese = () => {
+    setLoad(true);
+    dispatch({ type: 'SET_LANGUAGE', payload: 'tw' });
+  };
   return (
     <div
       style={
@@ -30,9 +45,6 @@ function Navbars({ state, locationDispatch, locationState }) {
         expand="sm"
         // bg="transparent"
         variant="dark"
-        // style={{
-        //   color: 'black !important',
-        // }}
         className="navbar-dark"
       >
         <Navbar.Brand
@@ -49,8 +61,6 @@ function Navbars({ state, locationDispatch, locationState }) {
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
-          // variant="dark"
-          // bg="transparent"
           className="navbar_hamburger"
           style={
             detectPages === '#/portfolio/About' ||
@@ -68,7 +78,7 @@ function Navbars({ state, locationDispatch, locationState }) {
               onClick={() => setDetectPages('home')}
               href="#/portfolio"
             >
-              <span
+              <a
                 style={
                   detectPages === 'about' || detectPages === 'resume'
                     ? { color: 'black' }
@@ -76,14 +86,14 @@ function Navbars({ state, locationDispatch, locationState }) {
                 }
               >
                 {a('frontend.local.nav.home')}
-              </span>
+              </a>
             </Nav.Link>
             <Nav.Link
               className="nav-link"
               href="#/portfolio/About"
               onClick={() => setDetectPages('about')}
             >
-              <span
+              <a
                 style={
                   detectPages === 'about' || detectPages === 'resume'
                     ? { color: 'black' }
@@ -91,14 +101,14 @@ function Navbars({ state, locationDispatch, locationState }) {
                 }
               >
                 {a('frontend.local.nav.about')}
-              </span>
+              </a>
             </Nav.Link>
             <Nav.Link
               className="nav-link"
               href="#/portfolio/Projects"
               onClick={() => setDetectPages('projects')}
             >
-              <span
+              <a
                 style={
                   detectPages === 'about' || detectPages === 'resume'
                     ? { color: 'black' }
@@ -106,13 +116,14 @@ function Navbars({ state, locationDispatch, locationState }) {
                 }
               >
                 {a('frontend.local.nav.projects')}
-              </span>
+              </a>
             </Nav.Link>
             <Nav.Link
+              className="nav-link"
               href="#/portfolio/Resume"
               onClick={() => setDetectPages('resume')}
             >
-              <span
+              <a
                 style={
                   detectPages === 'about' || detectPages === 'resume'
                     ? { color: 'black' }
@@ -120,21 +131,32 @@ function Navbars({ state, locationDispatch, locationState }) {
                 }
               >
                 {a('frontend.local.nav.resume')}
-              </span>
+              </a>
             </Nav.Link>
             <Nav.Link
-              href="#/portfolio/Settings"
-              onClick={() => setDetectPages('settings')}
+              className="nav-link"
+              style={{ display: 'inline !important' }}
             >
-              <span
+              <a
                 style={
                   detectPages === 'about' || detectPages === 'resume'
                     ? { color: 'black' }
                     : { color: 'white' }
                 }
+                onClick={() => handleChinese()}
               >
-                {a('frontend.local.nav.settings')}
-              </span>
+                中文
+              </a>
+              <a
+                style={
+                  detectPages === 'about' || detectPages === 'resume'
+                    ? { color: 'black' }
+                    : { color: 'white' }
+                }
+                onClick={() => handleEnglish()}
+              >
+                /English
+              </a>
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
