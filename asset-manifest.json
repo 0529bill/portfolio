@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.ab517160.chunk.css",
-    "main.js": "/portfolio/static/js/main.79fca7fc.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.79fca7fc.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.1ff9f51d.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.1ff9f51d.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.99b565f4.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.99b565f4.js.map",
     "static/css/2.a7a85ca3.chunk.css": "/portfolio/static/css/2.a7a85ca3.chunk.css",
@@ -15,14 +15,14 @@
     "static/media/B&P.068071c2.png": "/portfolio/static/media/B&P.068071c2.png",
     "static/media/countable.3478d476.png": "/portfolio/static/media/countable.3478d476.png",
     "static/media/flourish.b788b2b5.png": "/portfolio/static/media/flourish.b788b2b5.png",
-    "static/media/resume_eng.8ba4b391.pdf": "/portfolio/static/media/resume_eng.8ba4b391.pdf",
-    "static/media/resume_tw.e689f065.pdf": "/portfolio/static/media/resume_tw.e689f065.pdf"
+    "static/media/resume_eng.116e917d.pdf": "/portfolio/static/media/resume_eng.116e917d.pdf",
+    "static/media/resume_tw.aa9ed1bf.pdf": "/portfolio/static/media/resume_tw.aa9ed1bf.pdf"
   },
   "entrypoints": [
     "static/js/runtime-main.99b565f4.js",
     "static/css/2.a7a85ca3.chunk.css",
     "static/js/2.d021f5a1.chunk.js",
     "static/css/main.ab517160.chunk.css",
-    "static/js/main.79fca7fc.chunk.js"
+    "static/js/main.1ff9f51d.chunk.js"
   ]
 }
