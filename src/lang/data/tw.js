@@ -56,11 +56,17 @@ const lang = {
   'frontend.local.resume.skills.language': '語言能力',
   'frontend.local.resume.skills.otherInterests': '其他興趣',
   'frontend.local.resume.skills.volunteering': '志工服務',
-  'frontend.local.resume.skills.volunteering.description': `東吳大學國際處國際志工 (2017/7 ~ 2021)`,
+  'frontend.local.resume.skills.volunteering.description': `東吳大學國際處`,
+  'frontned.local.resume.skills.volunteering.title': `國際志工 (2017/7 ~ 2021)`,
   'frontned.local.resume.skills.volunteering.descrption.bullet1':
     '負責幫忙國際學生適應學校生活，幫忙處理國際學生遇到的生活上或是語言上的問題。',
   'frontend.local.resume.skills.volunteering.description.bullet2': `2019國際周組長，帶領國際志工團隊完成一整周的企劃和活動，幫助國際學生認識台灣文化和融入台灣校園生活。`,
   'frontend.local.resume.workExperences': '工作經驗',
+  'fronend.local.resume.workExperences.englishTeacher':
+    '線上英文老師 （2021/8 ~ 2021/10)',
+  'frontend.local.resume.workExperences.englishTeacher.bullet1':
+    '設計和應用有趣的課程來教學.',
+  'frontend.local.resume.workExperences.englishTeacher.bullet2': `學習團隊合作和面對問題時的解決方法.`,
   'fronend.local.resume.workExperences.desciption':
     '西門紅樓實習生 (2016/7 ~ 2016/8)',
   'frontend.local.resume.workExperences.bullet1':

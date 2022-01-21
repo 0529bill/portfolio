@@ -245,7 +245,7 @@ function Resume() {
                 <div>
                   {a('frontend.local.resume.skills.volunteering.description')}
                   <p style={{ marginBottom: '0px' }}>
-                    International students volunteer (2017/7 ~ 2021)
+                    {a('frontned.local.resume.skills.volunteering.title')}
                   </p>
                   <div className="resume_bullet">
                     <ul>
@@ -270,6 +270,27 @@ function Resume() {
               <Container className="resume_workExperences">
                 <div className="resume_subtitle">
                   {a('frontend.local.resume.workExperences')}
+                </div>
+                <div>
+                  {a('fronend.local.resume.workExperences.englishTeacher')}
+                  <div className="resume_bullet">
+                    <ul>
+                      <span>
+                        {a(
+                          'frontend.local.resume.workExperences.englishTeacher.bullet1'
+                        )}
+                      </span>
+                    </ul>
+                  </div>
+                  <div className="resume_bullet">
+                    <ul>
+                      <span>
+                        {a(
+                          'frontend.local.resume.workExperences.englishTeacher.bullet2'
+                        )}
+                      </span>
+                    </ul>
+                  </div>
                 </div>
                 <div>
                   {a('fronend.local.resume.workExperences.desciption')}

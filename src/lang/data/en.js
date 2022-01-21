@@ -65,6 +65,8 @@ const lang = {
   'frontend.local.resume.skills.volunteering': 'Volunteering',
   'frontend.local.resume.skills.volunteering.description': `Office of international & cross-strait
   Academic exchange, Soochow University.`,
+  'frontned.local.resume.skills.volunteering.title':
+    'International students volunteer (2017/7 ~ 2021)',
   'frontned.local.resume.skills.volunteering.descrption.bullet1': `Helping international students to adjust to a new
   environment.`,
   'frontend.local.resume.skills.volunteering.description.bullet2': `Organizing Soochow university's 2019 international
@@ -72,8 +74,13 @@ const lang = {
   activites related to chinese culture, including traditional Chinese games and foods, for
   international students to help them accustomed to Chinese culture.`,
   'frontend.local.resume.workExperences': 'Work Experences',
+  'fronend.local.resume.workExperences.englishTeacher':
+    'English teacher at Funday (2021/8 ~ 2021/10)',
   'fronend.local.resume.workExperences.desciption':
     'Intern at The Red House (2016/7 ~ 2016/8)',
+  'frontend.local.resume.workExperences.englishTeacher.bullet1':
+    'Designed and implemented an engaging curriculum for students.',
+  'frontend.local.resume.workExperences.englishTeacher.bullet2': `Learned to be a team player and resolve problems professionally.`,
   'frontend.local.resume.workExperences.bullet1': 'Organizing weekly bazzar.',
   'frontend.local.resume.workExperences.bullet2': `Coming up with new ideas for promotions, giveaways, and
   other projects that can give the bazzar a publicity and
