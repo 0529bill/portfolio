@@ -23,7 +23,7 @@ const lang = {
   'frontend.local.about.skillCards.webDesign': '網頁設計',
   'frontend.local.about.skillCards.language': '語言學習',
   'frontend.local.about.skillCards.webTextContent':
-    '我主要使用的框架是 React。除此之外，我還會使用 React-router, Redux 和 React-hooks.',
+    '我主要使用的框架是 React。除此之外，我還會使用 React-router, Redux, React-hooks 和 Typescript.',
   'frontend.local.about.skillCards.webDesignContent':
     '我用 css, Scss 和 bootstrap 來設計網頁',
   'frontend.local.about.skillCards.languageChinese': '中文: 母語',
@@ -33,6 +33,9 @@ const lang = {
     '一個讓你追蹤男女朋友的軟體',
   'frontend.local.projects.cardData.cardText.flourish':
     '一個模擬燈泡公司的軟體',
+  'frontend.local.projects.cardData.cardText.instaChat': '一個即時的聊天室',
+  'frontend.local.projects.cardDate.cardText.myPortfolio': '我的個人網站',
+  'frontend.local.projects.cardData.cardText.visacard': '一個3D的信用卡網站',
   'frontend.local.projects.cardData.cardText.B&P': '一個模擬滑板公司的網頁',
   'frontend.local.projects.cardFeatures': '專案特色',
   'frontend.local.projects.checkoutmyproject': '查看這個專案',
@@ -50,7 +53,7 @@ const lang = {
     2021)`,
   'frontend.local.resume.careerObjective': '工作目標',
   'frontend.local.resume.careerObjective.description': `我是一個積極、勤奮的前端工程師，我的專長包括JavaScript、
-   HTML、 CSS、 React和互動式網頁的部署。除次之外，我還有良好的溝通能力，並且我還是一個喜歡團隊合作的人。我相信我會是這個職位的完美人選。`,
+   HTML、 CSS、 React和互動式網頁的部署。除此之外，我有良好的溝通能力，並且我還是一個喜歡團隊合作的人。`,
   'frontend.local.resume.skills': '技能',
   'frontend.local.resume.skills.webDevelopment': '網頁開發',
   'frontend.local.resume.skills.language': '語言能力',
@@ -77,6 +80,12 @@ const lang = {
   'frontned.local.resume.sideProjects.projectName1': '專案名稱: Countable',
   'frontend.local.resume.sideProjects.projectName2': '專案名稱: B&P',
   'frontend.local.resume.sideProjects.projectName3': '專案名稱: Flourish',
+  'frontend.local.resume.sideProjects.projectName_instaChat':
+    '專案名稱: instaChat ',
+  'frontned.local.resume.sideProjects.projectName_visacard':
+    '專案名稱: visaCard',
+  'frontned.local.resume.sideProjects.projectName_myPortfolio':
+    '專案名稱：我的履歷網站',
   'frontend.local.resume.sideProjects.description1':
     '一個幫你追蹤紀錄過去感情的app',
   'frontend.local.resume.sideProjects.description2':

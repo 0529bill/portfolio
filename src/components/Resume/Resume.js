@@ -7,16 +7,30 @@ import { GApageView } from '@GoogleAnalytics/googleAnalytics';
 import countable from '@Assets/Projects/countable.png';
 import flourish from '@Assets/Projects/flourish.png';
 import BP from '@Assets/Projects/B&P.png';
+import instaChat from '@Assets/Projects/instaChat.png';
+import visacard from '@Assets/Projects/visacard.png';
+import myPortfolio from '@Assets/Projects/myPortfolio.png';
 
 function Resume() {
   let a = i18n();
   useEffect(() => GApageView('portfolio/Resume'), []);
 
   let [openModal, setOpenModal] = useState(false);
-  let webSkillData = ['Javascript', 'HTML', 'css', 'Git', 'React', 'Redux'];
+  let webSkillData = [
+    'Javascript',
+    'HTML',
+    'css',
+    'Git',
+    'React',
+    'Redux',
+    'Typescript',
+  ];
   let languageData = ['Chinese (Native)', 'English (TOEIC 930)'];
   let interestData = ['surfing', 'photography', 'drawing'];
 
+  let instaChatSkill = ['socket.io', 'express'];
+  let myPortfolioSkill = ['jest test', 'useReducer'];
+  let visaCardSkill = ['Typecsript', '3D effect', 'useReducer'];
   let countableSkill = [
     'react',
     'redux',
@@ -28,6 +42,9 @@ function Resume() {
   let bpSkill = ['shopping cart', 'context-api', 'react-router'];
   let flourishSkill = ['firebase_authenticaton', 'context-api', 'bootstrap'];
 
+  let instaChatFeature = ['realtime chatroom', 'websocket'];
+  let myPortfolioFeature = ['i18n', 'downloadable resume'];
+  let visaCardFeature = ['Typescript'];
   let countableFeature = ['CRUD operation', 'oauth authentication'];
   let flourishFeature = [
     'signIn/signUp',
@@ -136,6 +153,127 @@ function Resume() {
               </Container>
               <Container>
                 <div className="resume_subtitle">Side Projects</div>
+                <Row style={{ marginBottom: '40px' }}>
+                  <Col>
+                    <p className="resume_projectName">
+                      {a(
+                        'frontned.local.resume.sideProjects.projectName_visacard'
+                      )}
+                    </p>
+                    <Image
+                      src={visacard}
+                      thumbnail
+                      style={{
+                        maxHeight: '150px',
+                        objectFit: 'scale-down',
+                        width: '100%',
+                      }}
+                    />
+                    <p className="resume_projectsSubtitle">
+                      {a('frontend.local.projects.cardData.cardText.visacard')}
+                    </p>
+                    <p className="resume_tech">
+                      {a('frontend.local.resume.sideProjects.projectFeatures')}
+                    </p>
+                    {visaCardFeature.map((data, id) => (
+                      <div className="resume_bullet">
+                        <ul key={id}>
+                          <span key={id}>{data}</span>
+                        </ul>
+                      </div>
+                    ))}
+                    <p className="resume_tech">
+                      {a('frontend.local.resume.sideProjects.toolsUsed')}
+                    </p>
+                    {visaCardSkill.map((data, id) => (
+                      <div className="resume_bullet">
+                        <ul key={id}>
+                          <span key={id}>{data}</span>
+                        </ul>
+                      </div>
+                    ))}
+                  </Col>
+                  <Col>
+                    <p className="resume_projectName">
+                      {a(
+                        'frontned.local.resume.sideProjects.projectName_myPortfolio'
+                      )}
+                    </p>
+                    <Image
+                      thumbnail
+                      src={myPortfolio}
+                      style={{
+                        maxHeight: '150px',
+                        objectFit: 'scale-down',
+                        width: '100%',
+                      }}
+                    />
+                    <p className="resume_projectsSubtitle">
+                      {a(
+                        'frontend.local.projects.cardDate.cardText.myPortfolio'
+                      )}
+                    </p>
+                    <p className="resume_tech">
+                      {a('frontend.local.resume.sideProjects.projectFeatures')}
+                    </p>
+                    {myPortfolioFeature.map((data, id) => (
+                      <div className="resume_bullet">
+                        <ul key={id}>
+                          <span key={id}>{data}</span>
+                        </ul>
+                      </div>
+                    ))}
+                    <p className="resume_tech">
+                      {a('frontend.local.resume.sideProjects.toolsUsed')}
+                    </p>
+                    {myPortfolioSkill.map((data, id) => (
+                      <div className="resume_bullet">
+                        <ul key={id}>
+                          <span key={id}>{data}</span>
+                        </ul>
+                      </div>
+                    ))}
+                  </Col>
+                  <Col>
+                    <p className="resume_projectName">
+                      {a(
+                        'frontend.local.resume.sideProjects.projectName_instaChat'
+                      )}
+                    </p>
+                    <Image
+                      thumbnail
+                      src={instaChat}
+                      style={{
+                        maxHeight: '150px',
+                        objectFit: 'scale-down',
+                        width: '100%',
+                      }}
+                    />
+                    <p className="resume_projectsSubtitle">
+                      {a('frontend.local.projects.cardData.cardText.instaChat')}
+                    </p>
+                    <p className="resume_tech">
+                      {a('frontend.local.resume.sideProjects.projectFeatures')}
+                    </p>
+                    {instaChatFeature.map((data, id) => (
+                      <div className="resume_bullet">
+                        <ul key={id}>
+                          <span key={id}>{data}</span>
+                        </ul>
+                      </div>
+                    ))}
+                    <p className="resume_tech">
+                      {a('frontend.local.resume.sideProjects.toolsUsed')}
+                    </p>
+                    {instaChatSkill.map((data, id) => (
+                      <div className="resume_bullet">
+                        <ul key={id}>
+                          <span key={id}>{data}</span>
+                        </ul>
+                      </div>
+                    ))}
+                  </Col>
+                </Row>
                 <Row>
                   <Col>
                     <p className="resume_projectName">

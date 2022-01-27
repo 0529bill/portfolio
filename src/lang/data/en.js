@@ -24,7 +24,7 @@ const lang = {
   'frontend.local.about.skillCards.webDesign': 'Web Design',
   'frontend.local.about.skillCards.language': 'Languages',
   'frontend.local.about.skillCards.webTextContent': `I use React. I am familiar with react ecosystem including
-  React-router, Redux and React-hooks.`,
+  React-router, Redux, React-hooks and Typescript.`,
   'frontend.local.about.skillCards.webDesignContent':
     'I use css, scss and bootstrap to style my web pages.',
   'frontend.local.about.skillCards.languageChinese': 'Chinese: native',
@@ -34,6 +34,12 @@ const lang = {
     'This is an app that can helps you to track your past relationships',
   'frontend.local.projects.cardData.cardText.flourish':
     'This is a lightbulb website.',
+  'frontend.local.projects.cardData.cardText.instaChat':
+    'This is a realtime chatroom.',
+  'frontend.local.projects.cardData.cardText.visacard':
+    'This is a 3D visa card apps.',
+  'frontend.local.projects.cardDate.cardText.myPortfolio':
+    'This is my portfolio.',
   'frontend.local.projects.cardData.cardText.B&P':
     'Thia is a skateboard website.',
   'frontend.local.projects.cardFeatures': 'Project Features',
@@ -89,6 +95,12 @@ const lang = {
   'frontned.local.resume.sideProjects.projectName1': 'Project name: Countable',
   'frontend.local.resume.sideProjects.projectName2': 'Project name: B&P',
   'frontend.local.resume.sideProjects.projectName3': 'Project name: Flourish',
+  'frontend.local.resume.sideProjects.projectName_instaChat':
+    'Project name: instChat',
+  'frontned.local.resume.sideProjects.projectName_visacard':
+    'Project name: 3D visacard',
+  'frontned.local.resume.sideProjects.projectName_myPortfolio':
+    'Project name: My portfolio',
   'frontend.local.resume.sideProjects.description1':
     'An app that helps you track your past relationships',
   'frontend.local.resume.sideProjects.description2': `A skateboarding website with shoppoing cart, sign in, sign

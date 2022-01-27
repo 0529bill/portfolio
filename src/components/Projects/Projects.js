@@ -6,6 +6,9 @@ import i18n from '@Lang/i18n/i18n';
 import countable from '@Assets/Projects/countable.png';
 import flourish from '@Assets/Projects/flourish.png';
 import BP from '@Assets/Projects/B&P.png';
+import instaChat from '@Assets/Projects/instaChat.png';
+import visacard from '@Assets/Projects/visacard.png';
+import myPortfolio from '@Assets/Projects/myPortfolio.png';
 import './index.css';
 
 import { GApageView } from '@GoogleAnalytics/googleAnalytics';
@@ -14,6 +17,30 @@ function Project() {
   useEffect(() => GApageView('portfolio/Projects'), []);
   let a = i18n();
   let cardData = [
+    {
+      id: 6,
+      img: myPortfolio,
+      cardTitle: 'My portfolio',
+      cardText: 'frontend.local.projects.cardDate.cardText.myPortfolio',
+      cardLink: 'https://0529bill.github.io/portfolio/#/portfolio',
+      cardFeatures: ['i18n without package', 'downloadable resume'],
+    },
+    {
+      id: 2,
+      img: instaChat,
+      cardTitle: 'instaChat',
+      cardText: 'frontend.local.projects.cardData.cardText.instaChat',
+      cardLink: 'https://github.com/0529bill/chat-room',
+      cardFeatures: ['socket.io', 'express', 'realtime chatroom'],
+    },
+    {
+      id: 5,
+      img: visacard,
+      cardTitle: '3D visacard',
+      cardText: 'frontend.local.projects.cardData.cardText.visacard',
+      cardLink: 'https://github.com/0529bill/react-visacard',
+      cardFeatures: ['Typescript', '3D effect', 'useReducer'],
+    },
     {
       id: 1,
       img: countable,
@@ -30,14 +57,6 @@ function Project() {
       ],
     },
     {
-      id: 2,
-      img: flourish,
-      cardTitle: 'flourish',
-      cardText: 'frontend.local.projects.cardData.cardText.flourish',
-      cardLink: 'https://0529bill.github.io/signin-practice/',
-      cardFeatures: ['firebase_authenticaton', 'useContext', 'bootstrap'],
-    },
-    {
       id: 3,
       img: BP,
       cardTitle: 'B&P',
@@ -45,6 +64,14 @@ function Project() {
       cardLink:
         'https://0529bill.github.io/clothing_brand/#/clothing_brand/home',
       cardFeatures: ['shopping cart', 'useContext', 'react-router'],
+    },
+    {
+      id: 4,
+      img: flourish,
+      cardTitle: 'flourish',
+      cardText: 'frontend.local.projects.cardData.cardText.flourish',
+      cardLink: 'https://0529bill.github.io/signin-practice/',
+      cardFeatures: ['firebase_authenticaton', 'useContext', 'bootstrap'],
     },
   ];
   return (
