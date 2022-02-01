@@ -39,7 +39,13 @@ function Project() {
       cardTitle: '3D visacard',
       cardText: 'frontend.local.projects.cardData.cardText.visacard',
       cardLink: 'https://github.com/0529bill/react-visacard',
-      cardFeatures: ['Typescript', '3D effect', 'useReducer'],
+      cardFeatures: [
+        'Typescript',
+        'form validation',
+        'downlaodable jpg',
+        '3D effect',
+        'useReducer',
+      ],
     },
     {
       id: 1,

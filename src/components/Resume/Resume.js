@@ -30,7 +30,12 @@ function Resume() {
 
   let instaChatSkill = ['socket.io', 'express'];
   let myPortfolioSkill = ['jest test', 'useReducer'];
-  let visaCardSkill = ['Typecsript', '3D effect', 'useReducer'];
+  let visaCardSkill = [
+    'Typecsript',
+    'form validation',
+    '3D effect',
+    'useReducer',
+  ];
   let countableSkill = [
     'react',
     'redux',
