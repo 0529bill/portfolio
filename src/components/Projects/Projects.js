@@ -44,7 +44,7 @@ function Project() {
         'form validation',
         'downlaodable jpg',
         '3D effect',
-        'useReducer',
+        'Eslint',
       ],
     },
     {

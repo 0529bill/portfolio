@@ -18,12 +18,12 @@ function Resume() {
   let [openModal, setOpenModal] = useState(false);
   let webSkillData = [
     'Javascript',
-    'HTML',
-    'css',
+    'Typescript',
+    'Html/css',
     'Git',
     'React',
     'Redux',
-    'Typescript',
+    'Eslint',
   ];
   let languageData = ['Chinese (Native)', 'English (TOEIC 930)'];
   let interestData = ['surfing', 'photography', 'drawing'];
@@ -35,6 +35,7 @@ function Resume() {
     'form validation',
     '3D effect',
     'useReducer',
+    'Eslint',
   ];
   let countableSkill = [
     'react',
@@ -48,8 +49,8 @@ function Resume() {
   let flourishSkill = ['firebase_authenticaton', 'context-api', 'bootstrap'];
 
   let instaChatFeature = ['realtime chatroom', 'websocket'];
-  let myPortfolioFeature = ['i18n', 'downloadable resume'];
-  let visaCardFeature = ['Typescript'];
+  let myPortfolioFeature = ['i18n', 'google analytics', 'downloadable resume'];
+  let visaCardFeature = ['downloadable image'];
   let countableFeature = ['CRUD operation', 'oauth authentication'];
   let flourishFeature = [
     'signIn/signUp',
