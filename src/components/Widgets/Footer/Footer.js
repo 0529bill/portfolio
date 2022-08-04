@@ -1,6 +1,8 @@
-import React from 'react';
-import { Row, Col, Container } from 'react-bootstrap';
 import './index.css';
+
+import { Col, Container, Row } from 'react-bootstrap';
+
+import React from 'react';
 
 function Footer({ locationState }) {
   return (

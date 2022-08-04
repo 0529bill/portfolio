@@ -59,6 +59,11 @@
 
 }
 
+.resume_title {
+font-weight: bold;
+margin-top: 30px;
+}
+
 
 
 .resume_description::after{

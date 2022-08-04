@@ -1,15 +1,17 @@
-import React, { useState, useEffect } from 'react';
-import i18n from '@Lang/i18n/i18n';
-import { Container, Row, Col, Image } from 'react-bootstrap';
-import Modal from '@Components/Widgets/Modal/Modal';
 import './index.css';
+
+import { Col, Container, Image, Row } from 'react-bootstrap';
+import React, { useEffect, useState } from 'react';
+
+import BP from '@Assets/Projects/B&P.png';
 import { GApageView } from '@GoogleAnalytics/googleAnalytics';
+import Modal from '@Components/Widgets/Modal/Modal';
 import countable from '@Assets/Projects/countable.png';
 import flourish from '@Assets/Projects/flourish.png';
-import BP from '@Assets/Projects/B&P.png';
+import i18n from '@Lang/i18n/i18n';
 import instaChat from '@Assets/Projects/instaChat.png';
-import visacard from '@Assets/Projects/visacard.png';
 import myPortfolio from '@Assets/Projects/myPortfolio.png';
+import visacard from '@Assets/Projects/visacard.png';
 
 function Resume() {
   let a = i18n();
@@ -17,13 +19,12 @@ function Resume() {
 
   let [openModal, setOpenModal] = useState(false);
   let webSkillData = [
-    'Javascript',
     'Typescript',
+    'Javascript',
     'Html/css',
     'Git',
-    'React',
-    'Redux',
-    'Eslint',
+    'React, Redux',
+    'MongoDB, mongoose',
   ];
   let languageData = ['Chinese (Native)', 'English (TOEIC 930)'];
   let interestData = ['surfing', 'photography', 'drawing'];
@@ -158,8 +159,8 @@ function Resume() {
                 </Row>
               </Container>
               <Container>
-                <div className="resume_subtitle">Side Projects</div>
-                <Row style={{ marginBottom: '40px' }}>
+                {/* <div className="resume_subtitle">Side Projects</div> */}
+                {/* <Row style={{ marginBottom: '40px' }}>
                   <Col>
                     <p className="resume_projectName">
                       {a(
@@ -380,7 +381,7 @@ function Resume() {
                       </div>
                     ))}
                   </Col>
-                </Row>
+                </Row> */}
               </Container>
               <Container>
                 <div className="resume_subtitle">
@@ -416,7 +417,44 @@ function Resume() {
                   {a('frontend.local.resume.workExperences')}
                 </div>
                 <div>
-                  {a('fronend.local.resume.workExperences.englishTeacher')}
+                  <div className="resume_title">
+                    {a('frontend.local.resume.workExperences.MusicBravo')}
+                  </div>
+                  <div className="resume_bullet">
+                    <ul>
+                      <span>
+                        {a(
+                          'frontend.local.resume.workExperences.MusicBravo.description'
+                        )}
+                      </span>
+                    </ul>
+                    <ul>
+                      <span>
+                        {a(
+                          'frontend.local.resume.workExperences.MusicBravo.description2'
+                        )}
+                      </span>
+                    </ul>
+                    <ul>
+                      <span>
+                        {a(
+                          'frontend.local.resume.workExperences.MusicBravo.description3'
+                        )}
+                      </span>
+                    </ul>
+                    <ul>
+                      <span>
+                        {a(
+                          'frontend.local.resume.workExperences.MusicBravo.description4'
+                        )}
+                      </span>
+                    </ul>
+                  </div>
+                </div>
+                <div>
+                  <div className="resume_title">
+                    {a('frontend.local.resume.workExperences.englishTeacher')}
+                  </div>
                   <div className="resume_bullet">
                     <ul>
                       <span>
@@ -437,7 +475,23 @@ function Resume() {
                   </div>
                 </div>
                 <div>
-                  {a('fronend.local.resume.workExperences.desciption')}
+                  <div className="resume_title">
+                    {a('frontend.local.resume.description.job.dipp')}
+                  </div>
+                  <div className="resume_bullet">
+                    <ul>
+                      <span>
+                        {a(
+                          'frontend.local.resume.description.job.dipp.description'
+                        )}
+                      </span>
+                    </ul>
+                  </div>
+                </div>
+                <div>
+                  <div className="resume_title">
+                    {a('fronend.local.resume.workExperences.desciption')}
+                  </div>
                   <div className="resume_bullet">
                     <ul>
                       <span>

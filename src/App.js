@@ -1,17 +1,18 @@
-import { useState, useReducer, useEffect } from 'react';
-import { HashRouter, Switch, Route } from 'react-router-dom';
-import Navbars from '@Components/Widgets/Navbars/Navbars';
+import { HashRouter, Route, Switch } from 'react-router-dom';
+import { useEffect, useReducer, useState } from 'react';
+
 import About from '@Components/About/About';
+import Footer from '@Components/Widgets/Footer/Footer';
 import Home from '@Components/Home/Home';
+import Navbars from '@Components/Widgets/Navbars/Navbars';
 import Projects from '@Components/Projects/Projects';
+import ReactGA from 'react-ga';
 import Resume from '@Components/Resume/Resume';
 import Settings from '@Components/Settings/Settings';
+import Spinner from '@Components/Widgets/Spinner/Spinner';
 import languageReducer from '@Reducers/languageReducer';
 import locationReducer from '@Reducers/locationReducer';
-import Spinner from '@Components/Widgets/Spinner/Spinner';
-import Footer from '@Components/Widgets/Footer/Footer';
 
-import ReactGA from 'react-ga';
 const TRACKING_ID = 'UA-175814960-3';
 ReactGA.initialize(TRACKING_ID, {
   siteSpeedSampleRate: 100,
@@ -57,19 +58,19 @@ function App() {
       />
       <HashRouter>
         <Switch>
-          <Route exact path="/portfolio">
+          <Route exact path='/portfolio'>
             <Home state={state} />
           </Route>
-          <Route exact path="/portfolio/About">
+          <Route exact path='/portfolio/About'>
             <About state={state} />
           </Route>
-          <Route exact path="/portfolio/Projects">
+          <Route exact path='/portfolio/Projects'>
             <Projects state={state} />
           </Route>
-          <Route exact path="/portfolio/Resume">
+          <Route exact path='/portfolio/Resume'>
             <Resume state={state} />
           </Route>
-          <Route exact path="/portfolio/Settings">
+          <Route exact path='/portfolio/Settings'>
             <Settings dispatch={dispatch} state={state} setLoad={setLoad} />
           </Route>
         </Switch>

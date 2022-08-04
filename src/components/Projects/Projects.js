@@ -1,29 +1,39 @@
-import React, { useEffect } from 'react';
-import Particle from '@Components/Widgets/Particle/Particle';
-import Card from '@Components/Widgets/Cards/Cards';
-import { Container, Col, Row } from 'react-bootstrap';
-import i18n from '@Lang/i18n/i18n';
-import countable from '@Assets/Projects/countable.png';
-import flourish from '@Assets/Projects/flourish.png';
-import BP from '@Assets/Projects/B&P.png';
-import instaChat from '@Assets/Projects/instaChat.png';
-import visacard from '@Assets/Projects/visacard.png';
-import myPortfolio from '@Assets/Projects/myPortfolio.png';
 import './index.css';
 
+import { Col, Container, Row } from 'react-bootstrap';
+import React, { useEffect } from 'react';
+
+import BP from '@Assets/Projects/B&P.png';
+import Card from '@Components/Widgets/Cards/Cards';
 import { GApageView } from '@GoogleAnalytics/googleAnalytics';
+import Particle from '@Components/Widgets/Particle/Particle';
+import TinyUrl from '@Assets/Projects/TinyUrl.png';
+import countable from '@Assets/Projects/countable.png';
+import flourish from '@Assets/Projects/flourish.png';
+import i18n from '@Lang/i18n/i18n';
+import instaChat from '@Assets/Projects/instaChat.png';
+import myPortfolio from '@Assets/Projects/myPortfolio.png';
+import visacard from '@Assets/Projects/visacard.png';
 
 function Project() {
   useEffect(() => GApageView('portfolio/Projects'), []);
   let a = i18n();
   let cardData = [
     {
+      id: 7,
+      img: TinyUrl,
+      cardTitle: 'TinyUrl',
+      cardLink: 'https://super-url-shortener.netlify.app/',
+      cardText: 'frontend.local.projects.cardDate.cardText.tinyUrl',
+      cardFeatures: ['Typescript', 'mongoDB', 'mongoose', 'JWT', 'Vite'],
+    },
+    {
       id: 6,
       img: myPortfolio,
       cardTitle: 'My portfolio',
       cardText: 'frontend.local.projects.cardDate.cardText.myPortfolio',
       cardLink: 'https://0529bill.github.io/portfolio/#/portfolio',
-      cardFeatures: ['i18n without package', 'downloadable resume'],
+      cardFeatures: ['i18n without npm package', 'downloadable resume'],
     },
     {
       id: 2,

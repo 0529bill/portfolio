@@ -40,11 +40,17 @@ const lang = {
     'This is a 3D visa card apps.',
   'frontend.local.projects.cardDate.cardText.myPortfolio':
     'This is my portfolio.',
+  'frontend.local.projects.cardDate.cardText.tinyUrl':
+    'TinyURl: a url shortener website',
   'frontend.local.projects.cardData.cardText.B&P':
     'Thia is a skateboard website.',
   'frontend.local.projects.cardFeatures': 'Project Features',
   'frontend.local.projects.checkoutmyproject': 'Check out this project',
   'frontend.local.resume.description.title': 'Tse Lin',
+  'frontend.local.resume.description.job.dipp':
+    'Dipp Frontend Developer Intern (2020/12 ~ 2021/4)',
+  'frontend.local.resume.description.job.dipp.description':
+    "maintain and improve Dipp's application.",
   'frontend.local.resume.description.jobTitle': 'Web developer',
   'frontend.local.resume.description.location':
     'Currently living in Taipei, Taiwan.',
@@ -80,8 +86,18 @@ const lang = {
   activites related to chinese culture, including traditional Chinese games and foods, for
   international students to help them accustomed to Chinese culture.`,
   'frontend.local.resume.workExperences': 'Work Experences',
-  'fronend.local.resume.workExperences.englishTeacher':
+  'frontend.local.resume.workExperences.englishTeacher':
     'English teacher at Funday (2021/8 ~ 2021/10)',
+  'frontend.local.resume.workExperences.MusicBravo':
+    'Frontend Developer at MusicBravo (2022/3 ~ present)',
+  'frontend.local.resume.workExperences.MusicBravo.description':
+    '1.Refactor the codebase from class component to functional component, bootstrap to ant design.',
+  'frontend.local.resume.workExperences.MusicBravo.description2':
+    '2. Build new page and features using typescript, react-query, styled-components, etc.',
+  'frontend.local.resume.workExperences.MusicBravo.description3':
+    '3. optimize the codebase by using React dev tools(lighthouse, performance tab) to spot re-renders, then reduce re-render using useCallback, useMemo, and React.memo, etc.',
+  'frontend.local.resume.workExperences.MusicBravo.description4':
+    '4. Refactor the codebase from javascript to typescript.',
   'fronend.local.resume.workExperences.desciption':
     'Intern at The Red House (2016/7 ~ 2016/8)',
   'frontend.local.resume.workExperences.englishTeacher.bullet1':

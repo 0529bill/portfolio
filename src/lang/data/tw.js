@@ -35,6 +35,7 @@ const lang = {
     '一個模擬燈泡公司的軟體',
   'frontend.local.projects.cardData.cardText.instaChat': '一個即時的聊天室',
   'frontend.local.projects.cardDate.cardText.myPortfolio': '我的個人網站',
+  'frontend.local.projects.cardDate.cardText.tinyUrl': 'TinyURl: 一個縮網址',
   'frontend.local.projects.cardData.cardText.visacard': '一個3D的信用卡網站',
   'frontend.local.projects.cardData.cardText.B&P': '一個模擬滑板公司的網頁',
   'frontend.local.projects.cardFeatures': '專案特色',
@@ -52,6 +53,9 @@ const lang = {
   'frontend.local.resume.honors.description': `寧波同鄉會獎學金 (2018, 2019, 2020,
     2021)`,
   'frontend.local.resume.careerObjective': '工作目標',
+  'frontend.local.resume.description.job.dipp':
+    'Dipp 前端實習 (2020/12 ~ 2021/4)',
+  'frontend.local.resume.description.job.dipp.description': '維護公司SaaS系統',
   'frontend.local.resume.careerObjective.description': `我是一個積極、勤奮的前端工程師，我的專長包括JavaScript、
    HTML、 CSS、 React和互動式網頁的部署。除此之外，我有良好的溝通能力，並且我還是一個喜歡團隊合作的人。`,
   'frontend.local.resume.skills': '技能',
@@ -65,7 +69,17 @@ const lang = {
     '負責幫忙國際學生適應學校生活，幫忙處理國際學生遇到的生活上或是語言上的問題。',
   'frontend.local.resume.skills.volunteering.description.bullet2': `2019國際周組長，帶領國際志工團隊完成一整周的企劃和活動，幫助國際學生認識台灣文化和融入台灣校園生活。`,
   'frontend.local.resume.workExperences': '工作經驗',
-  'fronend.local.resume.workExperences.englishTeacher':
+  'frontend.local.resume.workExperences.MusicBravo':
+    '布拉沃科技 前端工程師 (2022/3 ~ present)',
+  'frontend.local.resume.workExperences.MusicBravo.description':
+    '1. 重構程式碼，把class component改成functional component, bootstrap改成ant design.',
+  'frontend.local.resume.workExperences.MusicBravo.description2':
+    '2. 負責寫新功能，用到的工具包含typescript, react-query, styled-components, etc.',
+  'frontend.local.resume.workExperences.MusicBravo.description3':
+    '3. 用React dev tools中的工具ex,lighthouse, performance, 來找出多餘render的地方, 然後用 useCallback, useMemo, and React.memo 等工具來優化',
+  'frontend.local.resume.workExperences.MusicBravo.description4':
+    '4. 重構程式碼，從Javascript改成Typescript.',
+  'frontend.local.resume.workExperences.englishTeacher':
     '線上英文老師 （2021/8 ~ 2021/10)',
   'frontend.local.resume.workExperences.englishTeacher.bullet1':
     '設計和應用有趣的課程來教學.',
