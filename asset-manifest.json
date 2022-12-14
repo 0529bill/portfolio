@@ -1,19 +1,21 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.4059fac3.chunk.css",
-    "main.js": "/portfolio/static/js/main.c9ef780b.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.c9ef780b.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.784aeec3.chunk.css",
+    "main.js": "/portfolio/static/js/main.0743fb82.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.0743fb82.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.99b565f4.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.99b565f4.js.map",
     "static/css/2.a7a85ca3.chunk.css": "/portfolio/static/css/2.a7a85ca3.chunk.css",
-    "static/js/2.2171b62c.chunk.js": "/portfolio/static/js/2.2171b62c.chunk.js",
-    "static/js/2.2171b62c.chunk.js.map": "/portfolio/static/js/2.2171b62c.chunk.js.map",
+    "static/js/2.19248153.chunk.js": "/portfolio/static/js/2.19248153.chunk.js",
+    "static/js/2.19248153.chunk.js.map": "/portfolio/static/js/2.19248153.chunk.js.map",
     "index.html": "/portfolio/index.html",
     "static/css/2.a7a85ca3.chunk.css.map": "/portfolio/static/css/2.a7a85ca3.chunk.css.map",
-    "static/css/main.4059fac3.chunk.css.map": "/portfolio/static/css/main.4059fac3.chunk.css.map",
-    "static/js/2.2171b62c.chunk.js.LICENSE.txt": "/portfolio/static/js/2.2171b62c.chunk.js.LICENSE.txt",
+    "static/css/main.784aeec3.chunk.css.map": "/portfolio/static/css/main.784aeec3.chunk.css.map",
+    "static/js/2.19248153.chunk.js.LICENSE.txt": "/portfolio/static/js/2.19248153.chunk.js.LICENSE.txt",
     "static/media/B&P.068071c2.png": "/portfolio/static/media/B&P.068071c2.png",
     "static/media/TinyUrl.36ba68ba.png": "/portfolio/static/media/TinyUrl.36ba68ba.png",
+    "static/media/TinyUrl.92772176.webp": "/portfolio/static/media/TinyUrl.92772176.webp",
+    "static/media/client-validation.ded10874.webp": "/portfolio/static/media/client-validation.ded10874.webp",
     "static/media/countable.3478d476.png": "/portfolio/static/media/countable.3478d476.png",
     "static/media/flourish.b788b2b5.png": "/portfolio/static/media/flourish.b788b2b5.png",
     "static/media/instaChat.d0330681.png": "/portfolio/static/media/instaChat.d0330681.png",
@@ -25,8 +27,8 @@
   "entrypoints": [
     "static/js/runtime-main.99b565f4.js",
     "static/css/2.a7a85ca3.chunk.css",
-    "static/js/2.2171b62c.chunk.js",
-    "static/css/main.4059fac3.chunk.css",
-    "static/js/main.c9ef780b.chunk.js"
+    "static/js/2.19248153.chunk.js",
+    "static/css/main.784aeec3.chunk.css",
+    "static/js/main.0743fb82.chunk.js"
   ]
 }
