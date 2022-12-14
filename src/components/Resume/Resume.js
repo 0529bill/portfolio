@@ -6,6 +6,8 @@ import React, { useEffect, useState } from 'react';
 import BP from '@Assets/Projects/B&P.png';
 import { GApageView } from '@GoogleAnalytics/googleAnalytics';
 import Modal from '@Components/Widgets/Modal/Modal';
+import TinyURl from '@Assets/Projects/TinyUrl.webp';
+import clientValidaiton from '@Assets/Projects/client-validation.webp';
 import countable from '@Assets/Projects/countable.png';
 import flourish from '@Assets/Projects/flourish.png';
 import i18n from '@Lang/i18n/i18n';
@@ -24,10 +26,14 @@ function Resume() {
     'Html/css',
     'Git',
     'React, Redux',
-    'MongoDB, mongoose',
+    'vite',
+    'Website optimization',
+    'Next.js(learning)',
+    'express(learning)',
+    'MongoDB, mongoose(learning)',
   ];
   let languageData = ['Chinese (Native)', 'English (TOEIC 930)'];
-  let interestData = ['surfing', 'photography', 'drawing'];
+  let interestData = ['bouldering', 'surfing', 'photography', 'drawing'];
 
   let instaChatSkill = ['socket.io', 'express'];
   let myPortfolioSkill = ['jest test', 'useReducer'];
@@ -37,6 +43,17 @@ function Resume() {
     '3D effect',
     'useReducer',
     'Eslint',
+  ];
+
+  let validationSkill = ['Typescript'];
+
+  let urlSkill = [
+    'Typescript',
+    'React context-api, useReducer',
+    'Vite',
+    'node.js + express.js',
+    'google oauth',
+    'mongoDB + mongoose',
   ];
   let countableSkill = [
     'react',
@@ -52,6 +69,12 @@ function Resume() {
   let instaChatFeature = ['realtime chatroom', 'websocket'];
   let myPortfolioFeature = ['i18n', 'google analytics', 'downloadable resume'];
   let visaCardFeature = ['downloadable image'];
+  let validationFeature = ['lightweight and very easy to use'];
+  let urlFeature = [
+    'shorten any URL',
+    `provides URL's qr-code`,
+    `provides URL's analytic data including url click count`,
+  ];
   let countableFeature = ['CRUD operation', 'oauth authentication'];
   let flourishFeature = [
     'signIn/signUp',
@@ -159,16 +182,89 @@ function Resume() {
                 </Row>
               </Container>
               <Container>
-                {/* <div className="resume_subtitle">Side Projects</div> */}
-                {/* <Row style={{ marginBottom: '40px' }}>
+                <Container className="resume_workExperences">
+                  <div className="resume_subtitle">
+                    {a('frontend.local.resume.workExperences')}
+                  </div>
+                  <div>
+                    <div className="resume_title">
+                      {a('frontend.local.resume.workExperences.MusicBravo')}
+                    </div>
+                    <div className="resume_bullet">
+                      <span style={{ whiteSpace: 'pre-line' }}>
+                        {a(
+                          'frontend.local.resume.workExperences.MusicBravo.description'
+                        )}
+                      </span>
+                    </div>
+                  </div>
+                  <div>
+                    <div className="resume_title">
+                      {a('frontend.local.resume.workExperences.englishTeacher')}
+                    </div>
+                    <div className="resume_bullet">
+                      <ul>
+                        <span>
+                          {a(
+                            'frontend.local.resume.workExperences.englishTeacher.bullet1'
+                          )}
+                        </span>
+                      </ul>
+                    </div>
+                    <div className="resume_bullet">
+                      <ul>
+                        <span>
+                          {a(
+                            'frontend.local.resume.workExperences.englishTeacher.bullet2'
+                          )}
+                        </span>
+                      </ul>
+                    </div>
+                  </div>
+                  <div>
+                    <div className="resume_title">
+                      {a('frontend.local.resume.description.job.dipp')}
+                    </div>
+                    <div className="resume_bullet">
+                      <ul>
+                        <span>
+                          {a(
+                            'frontend.local.resume.description.job.dipp.description'
+                          )}
+                        </span>
+                      </ul>
+                    </div>
+                  </div>
+                  <div>
+                    <div className="resume_title">
+                      {a('fronend.local.resume.workExperences.desciption')}
+                    </div>
+                    <div className="resume_bullet">
+                      <ul>
+                        <span>
+                          {a('frontend.local.resume.workExperences.bullet1')}
+                        </span>
+                      </ul>
+                    </div>
+                    <div className="resume_bullet">
+                      <ul>
+                        <span>
+                          {a('frontend.local.resume.workExperences.bullet2')}
+                        </span>
+                      </ul>
+                    </div>
+                  </div>
+                </Container>
+                <div className="resume_subtitle">Side Projects</div>
+                <Row style={{ marginBottom: '40px' }}>
                   <Col>
                     <p className="resume_projectName">
                       {a(
-                        'frontned.local.resume.sideProjects.projectName_visacard'
+                        'frontned.local.resume.sideProjects.projectName_validation'
                       )}
                     </p>
                     <Image
-                      src={visacard}
+                      src={clientValidaiton}
                       thumbnail
                       style={{
                         maxHeight: '150px',
@@ -177,12 +273,14 @@ function Resume() {
                       }}
                     />
                     <p className="resume_projectsSubtitle">
-                      {a('frontend.local.projects.cardData.cardText.visacard')}
+                      {a(
+                        'frontend.local.projects.cardData.cardText.validation'
+                      )}
                     </p>
                     <p className="resume_tech">
                       {a('frontend.local.resume.sideProjects.projectFeatures')}
                     </p>
-                    {visaCardFeature.map((data, id) => (
+                    {validationFeature.map((data, id) => (
                       <div className="resume_bullet">
                         <ul key={id}>
                           <span key={id}>{data}</span>
@@ -192,7 +290,7 @@ function Resume() {
                     <p className="resume_tech">
                       {a('frontend.local.resume.sideProjects.toolsUsed')}
                     </p>
-                    {visaCardSkill.map((data, id) => (
+                    {validationSkill.map((data, id) => (
                       <div className="resume_bullet">
                         <ul key={id}>
                           <span key={id}>{data}</span>
@@ -203,12 +301,12 @@ function Resume() {
                   <Col>
                     <p className="resume_projectName">
                       {a(
-                        'frontned.local.resume.sideProjects.projectName_myPortfolio'
+                        'frontned.local.resume.sideProjects.projectName_validation'
                       )}
                     </p>
                     <Image
+                      src={TinyURl}
                       thumbnail
-                      src={myPortfolio}
                       style={{
                         maxHeight: '150px',
                         objectFit: 'scale-down',
@@ -216,14 +314,12 @@ function Resume() {
                       }}
                     />
                     <p className="resume_projectsSubtitle">
-                      {a(
-                        'frontend.local.projects.cardDate.cardText.myPortfolio'
-                      )}
+                      {a('frontend.local.projects.cardData.cardText.tinyUrl')}
                     </p>
                     <p className="resume_tech">
                       {a('frontend.local.resume.sideProjects.projectFeatures')}
                     </p>
-                    {myPortfolioFeature.map((data, id) => (
+                    {urlFeature.map((data, id) => (
                       <div className="resume_bullet">
                         <ul key={id}>
                           <span key={id}>{data}</span>
@@ -233,7 +329,7 @@ function Resume() {
                     <p className="resume_tech">
                       {a('frontend.local.resume.sideProjects.toolsUsed')}
                     </p>
-                    {myPortfolioSkill.map((data, id) => (
+                    {urlSkill.map((data, id) => (
                       <div className="resume_bullet">
                         <ul key={id}>
                           <span key={id}>{data}</span>
@@ -350,6 +446,45 @@ function Resume() {
                   </Col>
                   <Col>
                     <p className="resume_projectName">
+                      {a(
+                        'frontned.local.resume.sideProjects.projectName_visacard'
+                      )}
+                    </p>
+                    <Image
+                      src={visacard}
+                      thumbnail
+                      style={{
+                        maxHeight: '150px',
+                        objectFit: 'scale-down',
+                        width: '100%',
+                      }}
+                    />
+                    <p className="resume_projectsSubtitle">
+                      {a('frontend.local.projects.cardData.cardText.visacard')}
+                    </p>
+                    <p className="resume_tech">
+                      {a('frontend.local.resume.sideProjects.projectFeatures')}
+                    </p>
+                    {visaCardFeature.map((data, id) => (
+                      <div className="resume_bullet">
+                        <ul key={id}>
+                          <span key={id}>{data}</span>
+                        </ul>
+                      </div>
+                    ))}
+                    <p className="resume_tech">
+                      {a('frontend.local.resume.sideProjects.toolsUsed')}
+                    </p>
+                    {visaCardSkill.map((data, id) => (
+                      <div className="resume_bullet">
+                        <ul key={id}>
+                          <span key={id}>{data}</span>
+                        </ul>
+                      </div>
+                    ))}
+                  </Col>
+                  <Col>
+                    <p className="resume_projectName">
                       {a('frontend.local.resume.sideProjects.projectName3')}
                     </p>
                     <Image
@@ -381,7 +516,57 @@ function Resume() {
                       </div>
                     ))}
                   </Col>
-                </Row> */}
+                  <Col>
+                    <p className="resume_projectName">
+                      {a(
+                        'frontned.local.resume.sideProjects.projectName_myPortfolio'
+                      )}
+                    </p>
+                    <Image
+                      thumbnail
+                      src={myPortfolio}
+                      style={{
+                        maxHeight: '150px',
+                        objectFit: 'scale-down',
+                        width: '100%',
+                      }}
+                    />
+                    <p className="resume_projectsSubtitle">
+                      {a(
+                        'frontend.local.projects.cardDate.cardText.myPortfolio'
+                      )}
+                    </p>
+                    <p className="resume_tech">
+                      {a('frontend.local.resume.sideProjects.projectFeatures')}
+                    </p>
+                    {myPortfolioFeature.map((data, id) => (
+                      <div className="resume_bullet">
+                        <ul key={id}>
+                          <span key={id}>{data}</span>
+                        </ul>
+                      </div>
+                    ))}
+                    <p className="resume_tech">
+                      {a('frontend.local.resume.sideProjects.toolsUsed')}
+                    </p>
+                    {myPortfolioSkill.map((data, id) => (
+                      <div className="resume_bullet">
+                        <ul key={id}>
+                          <span key={id}>{data}</span>
+                        </ul>
+                      </div>
+                    ))}
+                  </Col>
+                </Row>
+              </Container>
+              <Container>
+                <div className="resume_subtitle">
+                  {a('frontend.local.resume.skills.blog')}
+                </div>
+                <div>Tech note</div>
+                <div>https://0529bill.github.io/bywater-blog/</div>
+                <div style={{ marginTop: '15px' }}>Medium Tech blog</div>
+                <div>https://medium.com/@bywater529</div>
               </Container>
               <Container>
                 <div className="resume_subtitle">
@@ -407,102 +592,6 @@ function Resume() {
                         {a(
                           'frontend.local.resume.skills.volunteering.description.bullet2'
                         )}
-                      </span>
-                    </ul>
-                  </div>
-                </div>
-              </Container>
-              <Container className="resume_workExperences">
-                <div className="resume_subtitle">
-                  {a('frontend.local.resume.workExperences')}
-                </div>
-                <div>
-                  <div className="resume_title">
-                    {a('frontend.local.resume.workExperences.MusicBravo')}
-                  </div>
-                  <div className="resume_bullet">
-                    <ul>
-                      <span>
-                        {a(
-                          'frontend.local.resume.workExperences.MusicBravo.description'
-                        )}
-                      </span>
-                    </ul>
-                    <ul>
-                      <span>
-                        {a(
-                          'frontend.local.resume.workExperences.MusicBravo.description2'
-                        )}
-                      </span>
-                    </ul>
-                    <ul>
-                      <span>
-                        {a(
-                          'frontend.local.resume.workExperences.MusicBravo.description3'
-                        )}
-                      </span>
-                    </ul>
-                    <ul>
-                      <span>
-                        {a(
-                          'frontend.local.resume.workExperences.MusicBravo.description4'
-                        )}
-                      </span>
-                    </ul>
-                  </div>
-                </div>
-                <div>
-                  <div className="resume_title">
-                    {a('frontend.local.resume.workExperences.englishTeacher')}
-                  </div>
-                  <div className="resume_bullet">
-                    <ul>
-                      <span>
-                        {a(
-                          'frontend.local.resume.workExperences.englishTeacher.bullet1'
-                        )}
-                      </span>
-                    </ul>
-                  </div>
-                  <div className="resume_bullet">
-                    <ul>
-                      <span>
-                        {a(
-                          'frontend.local.resume.workExperences.englishTeacher.bullet2'
-                        )}
-                      </span>
-                    </ul>
-                  </div>
-                </div>
-                <div>
-                  <div className="resume_title">
-                    {a('frontend.local.resume.description.job.dipp')}
-                  </div>
-                  <div className="resume_bullet">
-                    <ul>
-                      <span>
-                        {a(
-                          'frontend.local.resume.description.job.dipp.description'
-                        )}
-                      </span>
-                    </ul>
-                  </div>
-                </div>
-                <div>
-                  <div className="resume_title">
-                    {a('fronend.local.resume.workExperences.desciption')}
-                  </div>
-                  <div className="resume_bullet">
-                    <ul>
-                      <span>
-                        {a('frontend.local.resume.workExperences.bullet1')}
-                      </span>
-                    </ul>
-                  </div>
-                  <div className="resume_bullet">
-                    <ul>
-                      <span>
-                        {a('frontend.local.resume.workExperences.bullet2')}
                       </span>
                     </ul>
                   </div>

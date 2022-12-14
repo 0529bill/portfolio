@@ -10,10 +10,10 @@ function Footer({ locationState }) {
       fluid
       className="footer_container"
       style={
-        locationState.location === 'about' ||
-        locationState.location === 'resume'
-          ? { backgroundColor: 'white', color: 'black' }
-          : { backgroundColor: 'black', color: 'white' }
+        // locationState.location === 'about' ||
+        // locationState.location === 'resume'
+        { backgroundColor: 'white', color: 'black' }
+        // : { backgroundColor: 'black', color: 'white' }
       }
     >
       <Row>

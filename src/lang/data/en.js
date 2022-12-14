@@ -23,10 +23,10 @@ const lang = {
   'frontend.local.about.skillCards.webText': 'Web Developmenet',
   'frontend.local.about.skillCards.webDesign': 'Web Design',
   'frontend.local.about.skillCards.language': 'Languages',
-  'frontend.local.about.skillCards.webTextContent': `I use React. I am familiar with react ecosystem including
-  React-router, Redux, React-hooks and Typescript.`,
+  'frontend.local.about.skillCards.webTextContent':
+    '- react \n - redux \n - react 18 \n - typescript \n - vite \n - website optimization \n Currently learning \n - next.js \n - MongoDB \n - Express.js',
   'frontend.local.about.skillCards.webDesignContent':
-    'I use css, scss and bootstrap to style my web pages.',
+    ' - css \n - scss \n - styled-components\n - css-modules\n - bootstrap\n -  ant-design\n - material-UI.',
   'frontend.local.about.skillCards.languageChinese': 'Chinese: native',
   'fronend.local.about.skillCards.languageEnglish': 'English: Business fluent',
   'frontend.local.projects.header': 'My projects',
@@ -38,6 +38,10 @@ const lang = {
     'This is a realtime chatroom.',
   'frontend.local.projects.cardData.cardText.visacard':
     'This is a 3D visa card apps.',
+  'frontend.local.projects.cardData.cardText.validation':
+    'This is a form validation tool',
+  'frontend.local.projects.cardData.cardText.tinyUrl':
+    'This is a url shortener.',
   'frontend.local.projects.cardDate.cardText.myPortfolio':
     'This is my portfolio.',
   'frontend.local.projects.cardDate.cardText.tinyUrl':
@@ -75,6 +79,7 @@ const lang = {
   'frontend.local.resume.skills.language': 'Language',
   'frontend.local.resume.skills.otherInterests': 'Other interests',
   'frontend.local.resume.skills.volunteering': 'Volunteering',
+  'frontend.local.resume.skills.blog': 'Blog',
   'frontend.local.resume.skills.volunteering.description': `Office of international & cross-strait
   Academic exchange, Soochow University.`,
   'frontned.local.resume.skills.volunteering.title':
@@ -90,8 +95,30 @@ const lang = {
     'English teacher at Funday (2021/8 ~ 2021/10)',
   'frontend.local.resume.workExperences.MusicBravo':
     'Frontend Developer at MusicBravo (2022/3 ~ present)',
-  'frontend.local.resume.workExperences.MusicBravo.description':
-    '1.Refactor the codebase from class component to functional component, bootstrap to ant design.',
+  'frontend.local.resume.workExperences.MusicBravo.description': `1. Optimization
+    Using chrome lighthouse to analyze the front page, then based on the stats, I decided to\n
+   - add route-based code splitting and React suspense to the codebase
+   - add rollup-bundle-analyzer to visualize bundle size
+   - using rollup's manualChunks option to split vendors based on file size and individual dependencies purpose 
+   - change image format from jpg to webp to reduce file size
+   - reduce rerender using useCallback, useMemo and React.memo \n
+    result: Improve company’s “publishing app”’s lighthouse score by 10 percent and both FCP and LCP score improved dramatically. \n
+   2. build new pages and features using typescript, react-query, styled-components, etc. \n
+   - build a frontend validation tool for form validation. I also published it in NPM and wrote an article about it.
+    https://medium.com/@bywater529/驗證不求人-發佈自己的-npm-驗證套件-e3aa7ba1cfb5 
+    https://www.npmjs.com/package/react-client-validation \n
+   - build the company’s new front page.
+   https://www.musicbravo.net/Home
+   - adding new features to the company’s “publishing app”.\n
+   3. Refactor the codebase \n
+   - refactor contract page (CRUD) 
+   - refactor the “apply for withdrawal” page
+   - refactor the “contract renewal” page \n
+   4. codebase improvement \n
+   - class component to functional component
+   - bootstrap to ant design
+   - adding Typescript to the project
+    `,
   'frontend.local.resume.workExperences.MusicBravo.description2':
     '2. Build new page and features using typescript, react-query, styled-components, etc.',
   'frontend.local.resume.workExperences.MusicBravo.description3':
@@ -115,6 +142,8 @@ const lang = {
     'Project name: instChat',
   'frontned.local.resume.sideProjects.projectName_visacard':
     'Project name: 3D visacard',
+  'frontned.local.resume.sideProjects.projectName_validation':
+    'Project name: React-client-validation',
   'frontned.local.resume.sideProjects.projectName_myPortfolio':
     'Project name: My portfolio',
   'frontend.local.resume.sideProjects.description1':

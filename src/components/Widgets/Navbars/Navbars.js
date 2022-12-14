@@ -1,8 +1,10 @@
-import React, { useEffect, useState } from 'react';
-import { Navbar, Nav } from 'react-bootstrap';
-
 import './index.css';
+
+import { Nav, Navbar } from 'react-bootstrap';
+import React, { useEffect, useState } from 'react';
+
 import i18n from '@Lang/i18n/i18n';
+
 function Navbars({
   state,
   locationDispatch,
@@ -18,7 +20,7 @@ function Navbars({
       type: 'SET_LOCATION',
       payload: detectPages,
     });
-  }, [detectPages]);
+  }, [detectPages, locationDispatch]);
 
   let handleEnglish = () => {
     setLoad(true);
@@ -30,16 +32,7 @@ function Navbars({
     dispatch({ type: 'SET_LANGUAGE', payload: 'tw' });
   };
   return (
-    <div
-      style={
-        detectPages === 'about' || detectPages === 'resume'
-          ? { backgroundColor: 'white', color: 'black' }
-          : {
-              backgroundColor: 'black',
-              color: 'white',
-            }
-      }
-    >
+    <div style={{ backgroundColor: 'white', color: 'black' }}>
       <Navbar
         collapseOnSelect
         expand="sm"
@@ -50,12 +43,8 @@ function Navbars({
         <Navbar.Brand
           className="nav-brand"
           onClick={() => setDetectPages('home')}
-          href="#/portfolio"
-          style={
-            detectPages === 'about' || detectPages === 'resume'
-              ? { color: 'black' }
-              : { color: 'white' }
-          }
+          href="#/portfolio/About"
+          style={{ color: 'black' }}
         >
           Bill
         </Navbar.Brand>
@@ -73,7 +62,7 @@ function Navbars({
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ml-auto">
-            <Nav.Link
+            {/* <Nav.Link
               className="nav-link"
               onClick={() => setDetectPages('home')}
               href="#/portfolio"
@@ -87,23 +76,15 @@ function Navbars({
               >
                 {a('frontend.local.nav.home')}
               </a>
-            </Nav.Link>
+            </Nav.Link> */}
             <Nav.Link
               className="nav-link"
               href="#/portfolio/About"
               onClick={() => setDetectPages('about')}
             >
-              <a
-                style={
-                  detectPages === 'about' || detectPages === 'resume'
-                    ? { color: 'black' }
-                    : { color: 'white' }
-                }
-              >
-                {a('frontend.local.nav.about')}
-              </a>
+              <a style={{ color: 'black' }}>{a('frontend.local.nav.about')}</a>
             </Nav.Link>
-            <Nav.Link
+            {/* <Nav.Link
               className="nav-link"
               href="#/portfolio/Projects"
               onClick={() => setDetectPages('projects')}
@@ -117,44 +98,22 @@ function Navbars({
               >
                 {a('frontend.local.nav.projects')}
               </a>
-            </Nav.Link>
+            </Nav.Link> */}
             <Nav.Link
               className="nav-link"
               href="#/portfolio/Resume"
               onClick={() => setDetectPages('resume')}
             >
-              <a
-                style={
-                  detectPages === 'about' || detectPages === 'resume'
-                    ? { color: 'black' }
-                    : { color: 'white' }
-                }
-              >
-                {a('frontend.local.nav.resume')}
-              </a>
+              <a style={{ color: 'black' }}>{a('frontend.local.nav.resume')}</a>
             </Nav.Link>
             <Nav.Link
               className="nav-link"
               style={{ display: 'inline !important' }}
             >
-              <a
-                style={
-                  detectPages === 'about' || detectPages === 'resume'
-                    ? { color: 'black' }
-                    : { color: 'white' }
-                }
-                onClick={() => handleChinese()}
-              >
+              <a style={{ color: 'black' }} onClick={() => handleChinese()}>
                 中文
               </a>
-              <a
-                style={
-                  detectPages === 'about' || detectPages === 'resume'
-                    ? { color: 'black' }
-                    : { color: 'white' }
-                }
-                onClick={() => handleEnglish()}
-              >
+              <a style={{ color: 'black' }} onClick={() => handleEnglish()}>
                 /English
               </a>
             </Nav.Link>

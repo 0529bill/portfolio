@@ -89,6 +89,14 @@ margin-top: 30px;
 font-size: 20px;
 }
 
+.resume_bullet{
+    margin-top: 10px; 
+    
+}
+
+.resume_bullet span{
+white-space: pre-line;
+}
 
 .resume_bullet ul{
     margin: 0px 0px 0px 0px;

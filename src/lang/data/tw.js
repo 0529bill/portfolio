@@ -23,9 +23,9 @@ const lang = {
   'frontend.local.about.skillCards.webDesign': '網頁設計',
   'frontend.local.about.skillCards.language': '語言學習',
   'frontend.local.about.skillCards.webTextContent':
-    '我主要使用的框架是 React。除此之外，我還會使用 React-router, Redux, React-hooks 和 Typescript.',
+    '- react \n - redux \n - react 18 \n - typescript \n - vite \n - website optimization \n Currently learning \n - next.js \n - MongoDB \n - Express.js',
   'frontend.local.about.skillCards.webDesignContent':
-    '我用 css, Scss 和 bootstrap 來設計網頁',
+    ' - css \n - scss \n - styled-components\n - css-modules\n - bootstrap\n -  ant-design\n - material-UI.',
   'frontend.local.about.skillCards.languageChinese': '中文: 母語',
   'fronend.local.about.skillCards.languageEnglish': '英文: 流利',
   'frontend.local.projects.header': '我的專案',
@@ -37,6 +37,9 @@ const lang = {
   'frontend.local.projects.cardDate.cardText.myPortfolio': '我的個人網站',
   'frontend.local.projects.cardDate.cardText.tinyUrl': 'TinyURl: 一個縮網址',
   'frontend.local.projects.cardData.cardText.visacard': '一個3D的信用卡網站',
+  'frontend.local.projects.cardData.cardText.validation':
+    '這是一個表單驗證套件',
+  'frontend.local.projects.cardData.cardText.tinyUrl': '這是一個縮網址的工具',
   'frontend.local.projects.cardData.cardText.B&P': '一個模擬滑板公司的網頁',
   'frontend.local.projects.cardFeatures': '專案特色',
   'frontend.local.projects.checkoutmyproject': '查看這個專案',
@@ -63,6 +66,7 @@ const lang = {
   'frontend.local.resume.skills.language': '語言能力',
   'frontend.local.resume.skills.otherInterests': '其他興趣',
   'frontend.local.resume.skills.volunteering': '志工服務',
+  'frontend.local.resume.skills.blog': 'Blog',
   'frontend.local.resume.skills.volunteering.description': `東吳大學國際處`,
   'frontned.local.resume.skills.volunteering.title': `國際志工 (2017/7 ~ 2021)`,
   'frontned.local.resume.skills.volunteering.descrption.bullet1':
@@ -71,8 +75,39 @@ const lang = {
   'frontend.local.resume.workExperences': '工作經驗',
   'frontend.local.resume.workExperences.MusicBravo':
     '布拉沃科技 前端工程師 (2022/3 ~ present)',
-  'frontend.local.resume.workExperences.MusicBravo.description':
-    '1. 重構程式碼，把class component改成functional component, bootstrap改成ant design.',
+  'frontend.local.resume.workExperences.MusicBravo.description': `
+  用lighthouse來分析公司版稅網站，然後透過得到的跑分，來做以下的優化
+
+- 新增route-based code splitting 和React Suspense來減少JS blocking
+- 新增 rollup-bundle-analyzer來視覺化bundle size
+- 用rollup的manuaChunks來切分vendors大小成不同任務的chunks
+- 更改image格式成使用webp來減少file大小
+- 用useCallback, useMemo and React.memo來減少rerender
+
+結果：版稅網站跑分進步10%，並且FCP和LCP都分數都大幅進步。
+
+用Typescript, React, React-query來寫新功能和網頁
+
+- 為前端網頁做form驗證共用套件，我有把源碼發佈到NPM上必且也寫一篇介紹文章
+
+[https://medium.com/@bywater529/驗證不求人-發佈自己的-npm-驗證套件-e3aa7ba1cfb5]
+[https://www.npmjs.com/package/react-client-validation]
+
+- 寫公司的新首頁
+- 新增新功能到公司版稅系統中
+
+重構代碼庫
+
+- 重構 合約功能頁面(CRUD合約)
+- 重構 申請提現頁面(CRUD提現紀錄）
+- 重構 續約管理頁面(CRUD續約關係)
+
+改進代碼庫
+
+- 將類組件轉換為函數組件
+- 從bootstrap改用ant design
+- 在項目中添加TypeScript
+    `,
   'frontend.local.resume.workExperences.MusicBravo.description2':
     '2. 負責寫新功能，用到的工具包含typescript, react-query, styled-components, etc.',
   'frontend.local.resume.workExperences.MusicBravo.description3':
@@ -98,6 +133,8 @@ const lang = {
     '專案名稱: instaChat ',
   'frontned.local.resume.sideProjects.projectName_visacard':
     '專案名稱: visaCard',
+  'frontned.local.resume.sideProjects.projectName_validation':
+    '專案名稱: React-client-validation',
   'frontned.local.resume.sideProjects.projectName_myPortfolio':
     '專案名稱：我的履歷網站',
   'frontend.local.resume.sideProjects.description1':

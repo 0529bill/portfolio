@@ -43,7 +43,16 @@ function App() {
   });
 
   return load ? (
-    <div style={{ backgroundColor: 'white', width: '100vw', height: '100vh' }}>
+    <div
+      style={{
+        backgroundColor: 'white',
+        width: '100vw',
+        height: '100vh',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+      }}
+    >
       <Spinner load={load} />
     </div>
   ) : (
@@ -58,19 +67,19 @@ function App() {
       />
       <HashRouter>
         <Switch>
-          <Route exact path='/portfolio'>
+          {/* <Route exact path='/portfolio'>
             <Home state={state} />
-          </Route>
-          <Route exact path='/portfolio/About'>
+          </Route> */}
+          <Route exact path="/portfolio/About">
             <About state={state} />
           </Route>
-          <Route exact path='/portfolio/Projects'>
+          {/* <Route exact path="/portfolio/Projects">
             <Projects state={state} />
-          </Route>
-          <Route exact path='/portfolio/Resume'>
+          </Route> */}
+          <Route exact path="/portfolio/Resume">
             <Resume state={state} />
           </Route>
-          <Route exact path='/portfolio/Settings'>
+          <Route exact path="/portfolio/Settings">
             <Settings dispatch={dispatch} state={state} setLoad={setLoad} />
           </Route>
         </Switch>

@@ -1,12 +1,15 @@
-import React, { useEffect } from 'react';
-import { Container, Col, Row } from 'react-bootstrap';
-import i18n from '@Lang/i18n/i18n';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInstagram, faGithub } from '@fortawesome/free-brands-svg-icons';
-import { GApageView } from '@GoogleAnalytics/googleAnalytics';
-import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './index.css';
+
+import { Col, Container, Row } from 'react-bootstrap';
+import React, { useEffect } from 'react';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+
+import AOS from 'aos';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { GApageView } from '@GoogleAnalytics/googleAnalytics';
+import i18n from '@Lang/i18n/i18n';
+
 function About() {
   let a = i18n();
   useEffect(() => GApageView('portfolio/About'), []);
@@ -68,7 +71,10 @@ function About() {
               <div className="skillCards_web">
                 <p>{a('frontend.local.about.skillCards.webText')}</p>
               </div>
-              <div className="skillCards_webText">
+              <div
+                className="skillCards_webText"
+                style={{ whiteSpace: 'pre-line', overflow: 'scroll' }}
+              >
                 {a('frontend.local.about.skillCards.webTextContent')}
               </div>
             </Col>
@@ -76,7 +82,10 @@ function About() {
               <div className="skillCards_web">
                 <p>{a('frontend.local.about.skillCards.webDesign')}</p>
               </div>
-              <div className="skillCards_webText">
+              <div
+                className="skillCards_webText"
+                style={{ whiteSpace: 'pre-line', overflow: 'scroll' }}
+              >
                 <div>
                   {a('frontend.local.about.skillCards.webDesignContent')}
                 </div>
@@ -107,7 +116,7 @@ function About() {
         </Container>
         <Container>
           <div style={{ paddingTop: '80px' }}>
-            <span>{a('frontend.local.about.photography')}</span>
+            {/* <span>{a('frontend.local.about.photography')}</span>
             <button
               className="ml-2"
               target="_blank"
@@ -117,7 +126,7 @@ function About() {
               }
             >
               here
-            </button>
+            </button> */}
             <div style={{ paddingTop: '10px', paddingBottom: '100px' }}>
               <a
                 style={{ marginRight: '10px' }}
@@ -129,16 +138,17 @@ function About() {
                 <FontAwesomeIcon icon={faGithub} size="lg" />
               </a>
               <a
-                href="https://www.instagram.com/bywater_photo/"
+                href="https://www.linkedin.com/in/lin-tse-175b4a158/"
                 target="_blank"
                 style={{ color: 'black' }}
                 onClick={() =>
                   window.location.replace(
-                    'https://www.instagram.com/bywater_photo/'
+                    'https://www.linkedin.com/in/lin-tse-175b4a158/'
                   )
                 }
+                rel="noreferrer"
               >
-                <FontAwesomeIcon icon={faInstagram} size="lg" />
+                <FontAwesomeIcon icon={faLinkedin} size="lg" />
               </a>
             </div>
           </div>
