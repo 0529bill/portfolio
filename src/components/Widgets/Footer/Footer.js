@@ -5,6 +5,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 import React from 'react';
 
 function Footer({ locationState }) {
+  return '';
   return (
     <Container
       fluid
