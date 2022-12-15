@@ -38,8 +38,9 @@ const lang = {
   'frontend.local.projects.cardDate.cardText.tinyUrl': 'TinyURl: 一個縮網址',
   'frontend.local.projects.cardData.cardText.visacard': '一個3D的信用卡網站',
   'frontend.local.projects.cardData.cardText.validation':
-    '這是一個表單驗證套件',
-  'frontend.local.projects.cardData.cardText.tinyUrl': '這是一個縮網址的工具',
+    '這是一個表單驗證套件。 \n我也有寫一篇文章介紹過它：https://medium.com/@bywater529/驗證不求人-發佈自己的-npm-驗證套件-e3aa7ba1cfb5',
+  'frontend.local.projects.cardData.cardText.tinyUrl':
+    '這是一個縮網址的工具，他除了可以縮網址之外，還可以記錄使用者的縮網址資料、點擊次數並且用圖表的方式來顯示。',
   'frontend.local.projects.cardData.cardText.B&P': '一個模擬滑板公司的網頁',
   'frontend.local.projects.cardFeatures': '專案特色',
   'frontend.local.projects.checkoutmyproject': '查看這個專案',

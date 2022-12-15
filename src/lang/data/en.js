@@ -39,7 +39,7 @@ const lang = {
   'frontend.local.projects.cardData.cardText.visacard':
     'This is a 3D visa card apps.',
   'frontend.local.projects.cardData.cardText.validation':
-    'This is a form validation tool',
+    'This is a form validation tool. \n I also wrote a article about the project: https://medium.com/@bywater529/驗證不求人-發佈自己的-npm-驗證套件-e3aa7ba1cfb5',
   'frontend.local.projects.cardData.cardText.tinyUrl':
     'This is a url shortener.',
   'frontend.local.projects.cardDate.cardText.myPortfolio':

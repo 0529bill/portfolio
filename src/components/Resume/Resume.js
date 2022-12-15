@@ -272,7 +272,10 @@ function Resume() {
                         width: '100%',
                       }}
                     />
-                    <p className="resume_projectsSubtitle">
+                    <p
+                      className="resume_projectsSubtitle"
+                      style={{ whiteSpace: 'pre-line' }}
+                    >
                       {a(
                         'frontend.local.projects.cardData.cardText.validation'
                       )}
@@ -369,6 +372,47 @@ function Resume() {
                       {a('frontend.local.resume.sideProjects.toolsUsed')}
                     </p>
                     {instaChatSkill.map((data, id) => (
+                      <div className="resume_bullet">
+                        <ul key={id}>
+                          <span key={id}>{data}</span>
+                        </ul>
+                      </div>
+                    ))}
+                  </Col>
+                  <Col>
+                    <p className="resume_projectName">
+                      {a(
+                        'frontned.local.resume.sideProjects.projectName_myPortfolio'
+                      )}
+                    </p>
+                    <Image
+                      thumbnail
+                      src={myPortfolio}
+                      style={{
+                        maxHeight: '150px',
+                        objectFit: 'scale-down',
+                        // width: '100%',
+                      }}
+                    />
+                    <p className="resume_projectsSubtitle">
+                      {a(
+                        'frontend.local.projects.cardDate.cardText.myPortfolio'
+                      )}
+                    </p>
+                    <p className="resume_tech">
+                      {a('frontend.local.resume.sideProjects.projectFeatures')}
+                    </p>
+                    {myPortfolioFeature.map((data, id) => (
+                      <div className="resume_bullet">
+                        <ul key={id}>
+                          <span key={id}>{data}</span>
+                        </ul>
+                      </div>
+                    ))}
+                    <p className="resume_tech">
+                      {a('frontend.local.resume.sideProjects.toolsUsed')}
+                    </p>
+                    {myPortfolioSkill.map((data, id) => (
                       <div className="resume_bullet">
                         <ul key={id}>
                           <span key={id}>{data}</span>
@@ -509,47 +553,6 @@ function Resume() {
                       {a('frontend.local.resume.sideProjects.toolsUsed')}
                     </p>
                     {flourishSkill.map((data, id) => (
-                      <div className="resume_bullet">
-                        <ul key={id}>
-                          <span key={id}>{data}</span>
-                        </ul>
-                      </div>
-                    ))}
-                  </Col>
-                  <Col>
-                    <p className="resume_projectName">
-                      {a(
-                        'frontned.local.resume.sideProjects.projectName_myPortfolio'
-                      )}
-                    </p>
-                    <Image
-                      thumbnail
-                      src={myPortfolio}
-                      style={{
-                        maxHeight: '150px',
-                        objectFit: 'scale-down',
-                        width: '100%',
-                      }}
-                    />
-                    <p className="resume_projectsSubtitle">
-                      {a(
-                        'frontend.local.projects.cardDate.cardText.myPortfolio'
-                      )}
-                    </p>
-                    <p className="resume_tech">
-                      {a('frontend.local.resume.sideProjects.projectFeatures')}
-                    </p>
-                    {myPortfolioFeature.map((data, id) => (
-                      <div className="resume_bullet">
-                        <ul key={id}>
-                          <span key={id}>{data}</span>
-                        </ul>
-                      </div>
-                    ))}
-                    <p className="resume_tech">
-                      {a('frontend.local.resume.sideProjects.toolsUsed')}
-                    </p>
-                    {myPortfolioSkill.map((data, id) => (
                       <div className="resume_bullet">
                         <ul key={id}>
                           <span key={id}>{data}</span>
